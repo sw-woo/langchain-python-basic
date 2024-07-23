@@ -1,18 +1,20 @@
+from langchain_text_splitters import CharacterTextSplitter
+from langchain_openai import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_community.document_loaders import TextLoader
 import os
 from dotenv import load_dotenv
 import asyncio
 load_dotenv()
-from langchain_community.document_loaders import TextLoader
-from langchain_community.vectorstores import FAISS
-from langchain_openai import OpenAIEmbeddings
-from langchain_text_splitters import CharacterTextSplitter
 
 # pip install faiss-cpu or faiss-gpu
-
-
+# 현재 파이썬 스크립트 실행 위치 반환
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# 현재 파이썬 스크립트 실행 같은 위치에 있는 "restaurant-faiss" 폴더 경로
+restaurant_faiss = os.path.join(current_dir, "restaurant-faiss")
 
 # TextLoader 클래스를 사용하여 "restaurant.txt"라는 파일에서 텍스트를 로드합니다.
-loader = TextLoader("./restaurant.txt")
+loader = TextLoader(f'{current_dir}/restaurant.txt')
 
 # 파일의 내용을 document 객체로 로드합니다.
 documents = loader.load()
@@ -32,5 +34,4 @@ embeddings = OpenAIEmbeddings(api_key=os.getenv("OPENAI_API_KEY"))
 db = FAISS.from_documents(docs, embeddings)
 
 # 생성된 FAISS 인덱스를 나중에 사용할 수 있도록 "restaurant-faiss"라는 로컬 디렉토리에 저장합니다.
-db.save_local("./restaurant-faiss")
-
+db.save_local(restaurant_faiss)

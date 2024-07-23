@@ -1,3 +1,4 @@
+# 실행 명령어 streamlit run client2.py
 import streamlit as st
 import requests
 

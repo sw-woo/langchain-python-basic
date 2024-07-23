@@ -1,23 +1,26 @@
+from langchain_text_splitters import CharacterTextSplitter
+from langchain_openai import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_community.document_loaders import TextLoader
 import os
 from dotenv import load_dotenv
 import asyncio
 load_dotenv()
-from langchain_community.document_loaders import TextLoader
-from langchain_community.vectorstores import FAISS
-from langchain_openai import OpenAIEmbeddings
-from langchain_text_splitters import CharacterTextSplitter
 
 # pip install faiss-cpu or faiss-gpu
-
+current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # main()이라는 비동기 함수를 정의합니다.
+
+
 async def main():
     # 환경 변수에서 가져온 OpenAI API 키를 사용하여 OpenAIEmbeddings 클래스를 초기화합니다.
     embeddings = OpenAIEmbeddings(api_key=os.getenv("OPENAI_API_KEY"))
 
     # 지정된 임베딩을 사용하여 로컬에 저장된 FAISS 인덱스를 로드합니다.
     # allow_dangerous_deserialization=True 옵션은 역직렬화를 허용합니다.
-    load_db = FAISS.load_local("./restaurant-faiss", embeddings, allow_dangerous_deserialization=True)
+    load_db = FAISS.load_local(
+        f'{current_dir}/restaurant-faiss', embeddings, allow_dangerous_deserialization=True)
 
     # 검색할 쿼리 문자열을 정의합니다.
     query = "음식점의 룸 서비스는 어떻게 운영되나요?"

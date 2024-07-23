@@ -1,5 +1,6 @@
 import requests
 
+# 실행명령어 : python client.py
 response1 = requests.post("http://localhost:8000/essay/invoke",
                           json={'input': {'topic': "행복에 대해서"}})
 

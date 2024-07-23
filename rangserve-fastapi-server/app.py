@@ -59,6 +59,7 @@ add_routes(
 )
 
 # 애플리케이션을 실행합니다.
+# 실행명령어 : python app.py
 if __name__ == "__main__":
     # localhost:8000에서 애플리케이션을 실행합니다.
     uvicorn.run(app, host="localhost", port=8000)
