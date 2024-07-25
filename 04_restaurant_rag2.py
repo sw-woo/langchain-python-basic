@@ -36,6 +36,7 @@ async def main():
 
     # 쿼리를 임베딩 벡터로 변환합니다.
     embedding_vector_query = embeddings.embed_query(query)
+    print("Query vector: ", embedding_vector_query, "\n")
 
     # 임베딩 벡터를 사용하여 비동기 방식으로 유사한 문서를 검색합니다.
     docs = await load_db.asimilarity_search_by_vector(embedding_vector_query)

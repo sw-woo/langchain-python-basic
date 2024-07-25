@@ -12,7 +12,8 @@ if OPENAI_API_KEY is None:
 
 # OpenAI 채팅 모델 생성
 chat = ChatOpenAI(
-    model="gpt-3.5-turbo", #or gpt-4 oepn-ai 모델 선택부분은 공식 홈페이지에서 확인 가능합니다. 현재는 gpt-3.5-turbo 모델을 사용하겠습니다.
+    # or gpt-4 oepn-ai 모델 선택부분은 공식 홈페이지에서 확인 가능합니다. 현재는 gpt-3.5-turbo 모델을 사용하겠습니다.
+    model="gpt-3.5-turbo",
     temperature=0, openai_api_key=OPENAI_API_KEY
 )
 
@@ -25,7 +26,7 @@ messages = [
         content="너는 심리 상담가 입니다."
     ),
     HumanMessage(
-        content= question
+        content=question
     ),
 ]
 

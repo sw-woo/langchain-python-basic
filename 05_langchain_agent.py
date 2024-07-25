@@ -44,9 +44,9 @@ load_dotenv()
 prompt = hub.pull("hwchase17/openai-functions-agent")
 
 
-# 일관된 값을 위하여 Temperature 0.1로 설정 model은 gpt-4o로 설정
+# 일관된 값을 위하여 Temperature 0.1로 설정 model은 gpt-4o로도 설정 할 수 있습니다.
 openai = ChatOpenAI(
-    model="gpt-3.5-turbo", api_key=os.getenv("OPENAI_API_KEY"), temperature=0.1)
+    model="gpt-4o-mini", api_key=os.getenv("OPENAI_API_KEY"), temperature=0.1)
 
 # Wikipedia API 설정 : top_k_results = 결과 수, doc_content_chars_max = 문서 길이 제한
 api_wrapper = WikipediaAPIWrapper(top_k_results=1, doc_content_chars_max=200)
