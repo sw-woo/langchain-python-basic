@@ -22,7 +22,7 @@ chain = prompt | openai
 # 사용자의 리뷰에 대한 평가를 요청합니다.
 try:
     response = chain.invoke({
-        "review": "사과네 피자 치킨을 전부 남겼습니다!",
+        "review": "맛은 있엇지만 배달 포장이 부족하여서 아쉬웠습니다.",
         "rating1": "1",
         "rating2": "5"
     })

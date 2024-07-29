@@ -1,0 +1,6 @@
+pandas
+pandasai
+streamlit
+langchain
+langchain_community
+langchain-ollama

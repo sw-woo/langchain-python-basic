@@ -1,17 +1,27 @@
 # pip install wikipedia
 # pip install arxiv
+
+# Agents 생성을 위한 참조
+# Agent Executer
+# 벡터 DB를 agent에게 전달하기 위한 tool생성
 from langchain.agents import AgentExecutor, create_react_agent, load_tools
 from langchain.agents import create_openai_tools_agent
 from langchain import hub
-from langchain.callbacks.manager import CallbackManager
+
+# pip install yfinance
+# yfinance api를 사용하기 위한 tool 생성
 from langchain_community.tools.yahoo_finance_news import YahooFinanceNewsTool
+
+# arxiv 논문 검색을 위한 tool 생성
 from langchain_community.utilities import ArxivAPIWrapper
 from langchain_community.tools import ArxivQueryRun
 from langchain.tools.retriever import create_retriever_tool
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
+# langchain 공식 문서 검색을 위한 검색기 역할을 하는 벡터 DB 생성
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import WebBaseLoader
+# agent tools 중 wikipedia 사용
 from langchain_community.utilities import WikipediaAPIWrapper
 from langchain_community.tools import WikipediaQueryRun
 from langchain_openai import ChatOpenAI
@@ -20,24 +30,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-# agent tools 중 wikipedia 사용
-
-# langchain 공식 문서 검색을 위한 검색기 역할을 하는 벡터 DB 생성
-
-# 벡터 DB를 agent에게 전달하기 위한 tool생성
-
-# arxiv 논문 검색을 위한 tool 생성
-
-# pip install yfinance
-# yfinance api를 사용하기 위한 tool 생성
-
-
 # agent 시물레이션을 위한 prompt 참조
-
-# Agents 생성을 위한 참조
-
-# Agent Executer
-
 # pip install langchainhub
 # hub에서 가져온 prompt를 agent에게 전달하기 위한 prompt 생성
 # prompt = hub.pull("sungwoo/openai-fuctions-ko-agent")
@@ -96,7 +89,8 @@ agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 
 # 최종적으로 agent_executor를 실행하여 결과를 출력한다.
 
-# agent_result = agent_executor.invoke({"input": "rag 고급 기법을 찾아서 알려줘"})
-agent_result = agent_executor.invoke({"input": "오늘자 마이크로소프트 주가와 소식을 알려줘"})
+agent_result = agent_executor.invoke(
+    {"input": "오늘자 삼성전자 주가를 알려주고 관련된 소식을 알려줘"})
+# agent_result = agent_executor.invoke({"input": "오늘자 마이크로소프트 주가와 소식을 알려줘"})
 
 print(agent_result)

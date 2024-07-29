@@ -1,0 +1,2545 @@
+2024-07-29 13:28:38 [INFO] Question: 커피의 종류를 알려줘
+
+2024-07-29 13:28:38 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-07-29 13:28:38 [INFO] Prompt ID: d86992a4-5e25-4176-bc38-5ae5885ae3a7
+2024-07-29 13:28:38 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-29 13:28:38 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-29 13:28:38 [INFO] Executing Step 1: CacheLookup
+2024-07-29 13:28:38 [INFO] Executing Step 2: PromptGeneration
+2024-07-29 13:28:38 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_16,2005,8.506746632360866,11.576924536816318,Latte,104.46807522683702
+Country_48,2009,7.866226366941213,8.758319740832714,Mocha,74.25867860757887
+Country_11,2010,5.174811762734912,10.248513059662669,Americano,69.29310960634966
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 커피의 종류를 알려줘
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-29 13:28:38 [INFO] Executing Step 3: CodeGenerator
+2024-07-29 13:28:38 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"
+2024-07-29 13:28:38 [ERROR] Pipeline failed on step 3: model "llama3.1" not found, try pulling it first
+2024-07-29 13:29:24 [INFO] Question: 커피의 종류를 알려줘
+2024-07-29 13:29:24 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-07-29 13:29:24 [INFO] Prompt ID: 4d72fd63-58c8-4161-b6bf-2d58b6c6012a
+2024-07-29 13:29:24 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-29 13:29:24 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-29 13:29:24 [INFO] Executing Step 1: CacheLookup
+2024-07-29 13:29:24 [INFO] Executing Step 2: PromptGeneration
+2024-07-29 13:29:24 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2000,4.317568164790175,5.938561219660086,Latte,112.38633885917622
+Country_13,2021,5.334958266915499,7.598946367813984,Cappuccino,140.59571582873215
+Country_1,2015,3.754625472247353,6.986327815010237,Mocha,76.37254798938946
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 커피의 종류를 알려줘
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-29 13:29:24 [INFO] Executing Step 3: CodeGenerator
+2024-07-29 13:29:27 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:29:35 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2000,4.317568164790175,5.938561219660086,Latte,112.38633885917622
+Country_13,2021,5.334958266915499,7.598946367813984,Cappuccino,140.59571582873215
+Country_1,2015,3.754625472247353,6.986327815010237,Mocha,76.37254798938946
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 커피의 종류를 알려줘
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-07-29 13:29:35 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Define variable dfs with data
+dfs = [
+    {
+        "Country": ["Country_42", "Country_13", "Country_1"],
+        "Year": [2000, 2021, 2015],
+        "Coffee Consumption (kg per capita per year)": [4.317568164790175, 5.334958266915499, 3.754625472247353],
+        "Average Coffee Price (USD per kg)": [5.938561219660086, 7.598946367813984, 6.986327815010237],
+        "Type of Coffee Consumed": ["Latte", "Cappuccino", "Mocha"],
+        "Population (millions)": [112.38633885917622, 140.59571582873215, 76.37254798938946]
+    }
+]
+
+# Declare result var: 
+result = {
+    "type": "string",
+    "value": f"The types of coffee consumed are {', '.join([coffee for coffee in [row['Type of Coffee Consumed'] for row in dfs[0]]])}."
+}
+
+print(result)
+            ```
+            
+2024-07-29 13:29:35 [INFO] Executing Step 4: CachePopulation
+2024-07-29 13:29:35 [INFO] Executing Step 5: CodeCleaning
+2024-07-29 13:29:35 [INFO] 
+Code running:
+```
+result = {'type': 'string', 'value': f"The types of coffee consumed are {', '.join([coffee for coffee in [row['Type of Coffee Consumed'] for row in dfs[0]]])}."}
+print(result)
+        ```
+2024-07-29 13:29:35 [INFO] Executing Step 6: CodeExecution
+2024-07-29 13:29:35 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+TypeError: string indices must be integers, not 'str'
+
+2024-07-29 13:29:35 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-07-29 13:29:35 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-29 13:29:35 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-29 13:29:35 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2000,4.317568164790175,5.938561219660086,Latte,112.38633885917622
+Country_13,2021,5.334958266915499,7.598946367813984,Cappuccino,140.59571582873215
+Country_1,2015,3.754625472247353,6.986327815010237,Mocha,76.37254798938946
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 커피의 종류를 알려줘
+
+You generated this python code:
+result = {'type': 'string', 'value': f"The types of coffee consumed are {', '.join([coffee for coffee in [row['Type of Coffee Consumed'] for row in dfs[0]]])}."}
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+TypeError: string indices must be integers, not 'str'
+
+
+Fix the python code above and return the new python code:
+2024-07-29 13:29:35 [INFO] Executing Step 1: CodeGenerator
+2024-07-29 13:29:35 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:29:40 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2000,4.317568164790175,5.938561219660086,Latte,112.38633885917622
+Country_13,2021,5.334958266915499,7.598946367813984,Cappuccino,140.59571582873215
+Country_1,2015,3.754625472247353,6.986327815010237,Mocha,76.37254798938946
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 커피의 종류를 알려줘
+
+You generated this python code:
+result = {'type': 'string', 'value': f"The types of coffee consumed are {', '.join([coffee for coffee in [row['Type of Coffee Consumed'] for row in dfs[0]]])}."}
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+TypeError: string indices must be integers, not 'str'
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-29 13:29:40 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# assuming dfs[0] is your dataframe and it's stored in 'df'
+df = dfs[0]
+
+result = {'type': 'string', 'value': f"The types of coffee consumed are {', '.join([row['Type of Coffee Consumed'] for row in df])}."}
+print(result)
+            ```
+            
+2024-07-29 13:29:40 [INFO] Executing Step 2: CodeCleaning
+2024-07-29 13:29:40 [INFO] 
+Code running:
+```
+df = dfs[0]
+result = {'type': 'string', 'value': f"The types of coffee consumed are {', '.join([row['Type of Coffee Consumed'] for row in df])}."}
+print(result)
+        ```
+2024-07-29 13:29:40 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+TypeError: string indices must be integers, not 'str'
+
+2024-07-29 13:29:40 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2024-07-29 13:29:40 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-29 13:29:40 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-29 13:29:40 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2000,4.317568164790175,5.938561219660086,Latte,112.38633885917622
+Country_13,2021,5.334958266915499,7.598946367813984,Cappuccino,140.59571582873215
+Country_1,2015,3.754625472247353,6.986327815010237,Mocha,76.37254798938946
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 커피의 종류를 알려줘
+
+You generated this python code:
+df = dfs[0]
+result = {'type': 'string', 'value': f"The types of coffee consumed are {', '.join([row['Type of Coffee Consumed'] for row in df])}."}
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+TypeError: string indices must be integers, not 'str'
+
+
+Fix the python code above and return the new python code:
+2024-07-29 13:29:40 [INFO] Executing Step 1: CodeGenerator
+2024-07-29 13:29:40 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:29:47 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2000,4.317568164790175,5.938561219660086,Latte,112.38633885917622
+Country_13,2021,5.334958266915499,7.598946367813984,Cappuccino,140.59571582873215
+Country_1,2015,3.754625472247353,6.986327815010237,Mocha,76.37254798938946
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 커피의 종류를 알려줘
+
+You generated this python code:
+df = dfs[0]
+result = {'type': 'string', 'value': f"The types of coffee consumed are {', '.join([row['Type of Coffee Consumed'] for row in df])}."}
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+TypeError: string indices must be integers, not 'str'
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-29 13:29:47 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# assuming dfs[0] is a pandas DataFrame with column names
+df = dfs[0]
+
+# get unique types of coffee consumed and join them into a string
+result = {'type': 'string', 
+          'value': f"The types of coffee consumed are {', '.join(set([row['Type of Coffee Consumed'] for row in df]))}."}
+print(result)
+            ```
+            
+2024-07-29 13:29:47 [INFO] Executing Step 2: CodeCleaning
+2024-07-29 13:29:47 [INFO] 
+Code running:
+```
+df = dfs[0]
+result = {'type': 'string', 'value': f"The types of coffee consumed are {', '.join(set([row['Type of Coffee Consumed'] for row in df]))}."}
+print(result)
+        ```
+2024-07-29 13:29:47 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+TypeError: string indices must be integers, not 'str'
+
+2024-07-29 13:29:47 [WARNING] Failed to execute code retrying with a correction framework [retry number: 3]
+2024-07-29 13:29:47 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-29 13:29:47 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-29 13:29:47 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2000,4.317568164790175,5.938561219660086,Latte,112.38633885917622
+Country_13,2021,5.334958266915499,7.598946367813984,Cappuccino,140.59571582873215
+Country_1,2015,3.754625472247353,6.986327815010237,Mocha,76.37254798938946
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 커피의 종류를 알려줘
+
+You generated this python code:
+df = dfs[0]
+result = {'type': 'string', 'value': f"The types of coffee consumed are {', '.join(set([row['Type of Coffee Consumed'] for row in df]))}."}
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+TypeError: string indices must be integers, not 'str'
+
+
+Fix the python code above and return the new python code:
+2024-07-29 13:29:47 [INFO] Executing Step 1: CodeGenerator
+2024-07-29 13:29:47 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:29:53 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2000,4.317568164790175,5.938561219660086,Latte,112.38633885917622
+Country_13,2021,5.334958266915499,7.598946367813984,Cappuccino,140.59571582873215
+Country_1,2015,3.754625472247353,6.986327815010237,Mocha,76.37254798938946
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 커피의 종류를 알려줘
+
+You generated this python code:
+df = dfs[0]
+result = {'type': 'string', 'value': f"The types of coffee consumed are {', '.join(set([row['Type of Coffee Consumed'] for row in df]))}."}
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+TypeError: string indices must be integers, not 'str'
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-29 13:29:53 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# assuming dfs[0] is your dataframe
+df = dfs[0]
+
+result = {'type': 'string', 
+          'value': f"The types of coffee consumed are {', '.join(set([row['Type of Coffee Consumed'] for row in df]))}."}
+print(result)
+            ```
+            
+2024-07-29 13:29:53 [INFO] Executing Step 2: CodeCleaning
+2024-07-29 13:29:53 [INFO] 
+Code running:
+```
+df = dfs[0]
+result = {'type': 'string', 'value': f"The types of coffee consumed are {', '.join(set([row['Type of Coffee Consumed'] for row in df]))}."}
+print(result)
+        ```
+2024-07-29 13:29:53 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+TypeError: string indices must be integers, not 'str'
+
+2024-07-29 13:29:53 [ERROR] Pipeline failed on step 6: string indices must be integers, not 'str'
+2024-07-29 13:35:49 [INFO] Question: what kind of coffee
+2024-07-29 13:35:49 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-07-29 13:35:49 [INFO] Prompt ID: c4ac0c53-7643-4cd9-9f68-892c7e69f7e8
+2024-07-29 13:35:49 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-29 13:35:49 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-29 13:35:49 [INFO] Executing Step 1: CacheLookup
+2024-07-29 13:35:49 [INFO] Executing Step 2: PromptGeneration
+2024-07-29 13:35:49 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_27,2013,5.631463693943923,9.13217875657588,Americano,64.19273686262929
+Country_24,2018,6.235718815771733,10.246880518451922,Mocha,109.75156141166676
+Country_32,2003,4.147026922217182,11.076327263436012,Espresso,129.43381223311496
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ what kind of coffee
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-29 13:35:49 [INFO] Executing Step 3: CodeGenerator
+2024-07-29 13:35:50 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:36:02 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_27,2013,5.631463693943923,9.13217875657588,Americano,64.19273686262929
+Country_24,2018,6.235718815771733,10.246880518451922,Mocha,109.75156141166676
+Country_32,2003,4.147026922217182,11.076327263436012,Espresso,129.43381223311496
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ what kind of coffee
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-07-29 13:36:02 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Declare input var:
+dfs = [pd.DataFrame({
+    'Country': ['Country_27', 'Country_24', 'Country_32'],
+    'Year': [2013, 2018, 2003],
+    'Coffee Consumption (kg per capita per year)': [5.631463693943923, 6.235718815771733, 4.147026922217182],
+    'Average Coffee Price (USD per kg)': [9.13217875657588, 10.246880518451922, 11.076327263436012],
+    'Type of Coffee Consumed': ['Americano', 'Mocha', 'Espresso'],
+    'Population (millions)': [64.19273686262929, 109.75156141166676, 129.43381223311496]
+})]
+
+# TODO: update the code here
+
+# Select the first dataframe from the list
+df = dfs[0]
+
+# Find the unique type of coffee consumed and sort it in descending order
+unique_coffee_types = df['Type of Coffee Consumed'].value_counts().index.tolist()
+coffee_type_counts = [str(value) for value in df['Type of Coffee Consumed'].value_counts().values]
+sorted_coffee_types = sorted(zip(unique_coffee_types, coffee_type_counts), key=lambda x: int(x[1]), reverse=True)
+
+# Plot a bar chart to display the count of each type of coffee consumed
+plt.figure(figsize=(10, 5))
+plt.bar([x[0] for x in sorted_coffee_types], [int(x[1]) for x in sorted_coffee_types])
+plt.xlabel('Type of Coffee Consumed')
+plt.ylabel('Count')
+plt.title('Coffee Consumption')
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.savefig('temp_chart.png')
+
+# Declare result var:
+result = {
+    "type": "plot",
+    "value": "temp_chart.png"
+}
+            ```
+            
+2024-07-29 13:36:02 [INFO] Executing Step 4: CachePopulation
+2024-07-29 13:36:02 [INFO] Executing Step 5: CodeCleaning
+2024-07-29 13:36:02 [INFO] Saving charts to /Users/usermackbookpro/langchain-python/pandasAI-langchain/exports/charts/temp_chart.png
+2024-07-29 13:36:02 [INFO] 
+Code running:
+```
+df = dfs[0]
+unique_coffee_types = df['Type of Coffee Consumed'].value_counts().index.tolist()
+coffee_type_counts = [str(value) for value in df['Type of Coffee Consumed'].value_counts().values]
+sorted_coffee_types = sorted(zip(unique_coffee_types, coffee_type_counts), key=lambda x: int(x[1]), reverse=True)
+plt.figure(figsize=(10, 5))
+plt.bar([x[0] for x in sorted_coffee_types], [int(x[1]) for x in sorted_coffee_types])
+plt.xlabel('Type of Coffee Consumed')
+plt.ylabel('Count')
+plt.title('Coffee Consumption')
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.savefig('/Users/usermackbookpro/langchain-python/pandasAI-langchain/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/usermackbookpro/langchain-python/pandasAI-langchain/exports/charts/temp_chart.png'}
+        ```
+2024-07-29 13:36:02 [INFO] Executing Step 6: CodeExecution
+2024-07-29 13:36:02 [INFO] Executing Step 7: ResultValidation
+2024-07-29 13:36:02 [INFO] Answer: {'type': 'plot', 'value': '/Users/usermackbookpro/langchain-python/pandasAI-langchain/exports/charts/temp_chart.png'}
+2024-07-29 13:36:02 [INFO] Executing Step 8: ResultParsing
+2024-07-29 13:36:46 [INFO] Question: 커피 종류를 알려줘
+2024-07-29 13:36:46 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-07-29 13:36:46 [INFO] Prompt ID: 03a6a6d3-a1b1-448e-8c42-74bebf3ef7a6
+2024-07-29 13:36:46 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-29 13:36:46 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-29 13:36:46 [INFO] Executing Step 1: CacheLookup
+2024-07-29 13:36:46 [INFO] Executing Step 2: PromptGeneration
+2024-07-29 13:36:46 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_47,2011,9.803855939582087,11.364327968888794,Cappuccino,22.45451237124072
+Country_27,2010,8.57746324653387,9.365832877556963,Mocha,99.48731557657702
+Country_50,2016,4.955829789069866,10.933349253162154,Espresso,63.154541318124
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 커피 종류를 알려줘
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-29 13:36:46 [INFO] Executing Step 3: CodeGenerator
+2024-07-29 13:36:47 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:36:54 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_47,2011,9.803855939582087,11.364327968888794,Cappuccino,22.45451237124072
+Country_27,2010,8.57746324653387,9.365832877556963,Mocha,99.48731557657702
+Country_50,2016,4.955829789069866,10.933349253162154,Espresso,63.154541318124
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 커피 종류를 알려줘
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-07-29 13:36:54 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assume dfs is already declared with the provided data
+dfs = [pd.DataFrame({
+    "Country": ["Country_47", "Country_27", "Country_50"],
+    "Year": [2011, 2010, 2016],
+    "Coffee Consumption (kg per capita per year)": [9.803855939582087, 8.57746324653387, 4.955829789069866],
+    "Average Coffee Price (USD per kg)": [11.364327968888794, 9.365832877556963, 10.933349253162154],
+    "Type of Coffee Consumed": ["Cappuccino", "Mocha", "Espresso"],
+    "Population (millions)": [22.45451237124072, 99.48731557657702, 63.154541318124]
+})]
+
+# QUERY: 커피 종류를 알려줘
+result = {
+    "type": "string",
+    "value": f"Coffee types are {dfs[0]['Type of Coffee Consumed'].unique()}."
+}
+
+print(result)
+            ```
+            
+2024-07-29 13:36:54 [INFO] Executing Step 4: CachePopulation
+2024-07-29 13:36:54 [INFO] Executing Step 5: CodeCleaning
+2024-07-29 13:36:54 [INFO] 
+Code running:
+```
+result = {'type': 'string', 'value': f"Coffee types are {dfs[0]['Type of Coffee Consumed'].unique()}."}
+print(result)
+        ```
+2024-07-29 13:36:54 [INFO] Executing Step 6: CodeExecution
+2024-07-29 13:36:54 [INFO] Executing Step 7: ResultValidation
+2024-07-29 13:36:54 [INFO] Answer: {'type': 'string', 'value': "Coffee types are ['Americano' 'Mocha' 'Latte' 'Espresso' 'Cappuccino']."}
+2024-07-29 13:36:54 [INFO] Executing Step 8: ResultParsing
+2024-07-29 13:37:25 [INFO] Question: 한국어로 대답을 해주면 좋을것 같아 내가 제공한 데이터를 EDA 해서 알려줘
+2024-07-29 13:37:25 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-07-29 13:37:25 [INFO] Prompt ID: f4cb880f-0b02-490c-aedd-20000993e3bc
+2024-07-29 13:37:25 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-29 13:37:25 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-29 13:37:25 [INFO] Executing Step 1: CacheLookup
+2024-07-29 13:37:25 [INFO] Executing Step 2: PromptGeneration
+2024-07-29 13:37:25 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_17,2001,8.898013026419898,10.682871704058552,Cappuccino,63.71051807979773
+Country_38,2004,7.545057401548809,4.209428642821734,Americano,75.66115132652898
+Country_42,2017,2.3630180222425796,14.065862419987184,Mocha,1.6706170370090725
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 한국어로 대답을 해주면 좋을것 같아 내가 제공한 데이터를 EDA 해서 알려줘
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-29 13:37:25 [INFO] Executing Step 3: CodeGenerator
+2024-07-29 13:37:26 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:37:36 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_17,2001,8.898013026419898,10.682871704058552,Cappuccino,63.71051807979773
+Country_38,2004,7.545057401548809,4.209428642821734,Americano,75.66115132652898
+Country_42,2017,2.3630180222425796,14.065862419987184,Mocha,1.6706170370090725
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 한국어로 대답을 해주면 좋을것 같아 내가 제공한 데이터를 EDA 해서 알려줘
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-07-29 13:37:36 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the data into a dataframe
+dfs = [pd.DataFrame({
+    "Country": ["Country_17", "Country_38", "Country_42"],
+    "Year": [2001, 2004, 2017],
+    "Coffee Consumption (kg per capita per year)": [8.898013026419898, 7.545057401548809, 2.3630180222425796],
+    "Average Coffee Price (USD per kg)": [10.682871704058552, 4.209428642821734, 14.065862419987184],
+    "Type of Coffee Consumed": ["Cappuccino", "Americano", "Mocha"],
+    "Population (millions)": [63.71051807979773, 75.66115132652898, 1.6706170370090725]
+})]
+
+# Perform EDA
+print("Summary Statistics:")
+print(dfs[0].describe())
+
+print("\nCorrelation Matrix:")
+print(dfs[0].corr())
+
+print("\nTop 3 Countries with Highest Coffee Consumption:")
+print(dfs[0].nlargest(3, "Coffee Consumption (kg per capita per year)"))
+
+# Declare result var:
+result = {
+    "type": "dataframe",
+    "value": dfs[0]
+}
+
+# Plot a chart
+plt.figure(figsize=(10,6))
+plt.bar("Country", "Coffee Consumption (kg per capita per year)", data=dfs[0])
+plt.title("Coffee Consumption by Country")
+plt.xlabel("Country")
+plt.ylabel("Coffee Consumption (kg per capita per year)")
+plt.savefig("coffee_consumption.png")
+
+result["type"] = "plot"
+result["value"] = "coffee_consumption.png"
+
+print(result)
+            ```
+            
+2024-07-29 13:37:36 [INFO] Executing Step 4: CachePopulation
+2024-07-29 13:37:36 [INFO] Executing Step 5: CodeCleaning
+2024-07-29 13:37:36 [INFO] Saving charts to /Users/usermackbookpro/langchain-python/pandasAI-langchain/exports/charts/temp_chart.png
+2024-07-29 13:37:36 [INFO] 
+Code running:
+```
+print('Summary Statistics:')
+print(dfs[0].describe())
+print("""
+Correlation Matrix:""")
+print(dfs[0].corr())
+print("""
+Top 3 Countries with Highest Coffee Consumption:""")
+print(dfs[0].nlargest(3, 'Coffee Consumption (kg per capita per year)'))
+result = {'type': 'dataframe', 'value': dfs[0]}
+plt.figure(figsize=(10, 6))
+plt.bar('Country', 'Coffee Consumption (kg per capita per year)', data=dfs[0])
+plt.title('Coffee Consumption by Country')
+plt.xlabel('Country')
+plt.ylabel('Coffee Consumption (kg per capita per year)')
+plt.savefig('/Users/usermackbookpro/langchain-python/pandasAI-langchain/exports/charts/temp_chart.png')
+result['type'] = 'plot'
+result['value'] = '/Users/usermackbookpro/langchain-python/pandasAI-langchain/exports/charts/temp_chart.png'
+print(result)
+        ```
+2024-07-29 13:37:36 [INFO] Executing Step 6: CodeExecution
+2024-07-29 13:37:39 [INFO] Executing Step 7: ResultValidation
+2024-07-29 13:37:39 [INFO] Answer: {'type': 'plot', 'value': '/Users/usermackbookpro/langchain-python/pandasAI-langchain/exports/charts/temp_chart.png'}
+2024-07-29 13:37:39 [INFO] Executing Step 8: ResultParsing
+2024-07-29 13:38:33 [INFO] Question: 2023년에 아메리카노 소비량을 알려줘
+2024-07-29 13:38:33 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-07-29 13:38:33 [INFO] Prompt ID: ea504398-e2c6-4e49-b162-521ef8555eec
+2024-07-29 13:38:33 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-29 13:38:33 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-29 13:38:33 [INFO] Executing Step 1: CacheLookup
+2024-07-29 13:38:33 [INFO] Executing Step 2: PromptGeneration
+2024-07-29 13:38:33 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_17,2000,4.133277267105609,7.344434080796206,Espresso,145.24985042758715
+Country_42,2009,7.732850204520401,11.705041040727467,Mocha,56.0713521434089
+Country_23,2010,9.47324275034405,5.658486574922111,Americano,100.71324697449153
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 2023년에 아메리카노 소비량을 알려줘
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-29 13:38:33 [INFO] Executing Step 3: CodeGenerator
+2024-07-29 13:38:34 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:38:47 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_17,2000,4.133277267105609,7.344434080796206,Espresso,145.24985042758715
+Country_42,2009,7.732850204520401,11.705041040727467,Mocha,56.0713521434089
+Country_23,2010,9.47324275034405,5.658486574922111,Americano,100.71324697449153
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 2023년에 아메리카노 소비량을 알려줘
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-07-29 13:38:47 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Initialize an empty list of dataframes (dfs)
+dfs = []
+
+# Load sample dataframe into dfs
+data = {
+    "Country": ["Country_17", "Country_42", "Country_23"],
+    "Year": [2000, 2009, 2010],
+    "Coffee Consumption (kg per capita per year)": [4.133277267105609, 7.732850204520401, 9.47324275034405],
+    "Average Coffee Price (USD per kg)": [7.344434080796206, 11.705041040727467, 5.658486574922111],
+    "Type of Coffee Consumed": ["Espresso", "Mocha", "Americano"],
+    "Population (millions)": [145.24985042758715, 56.0713521434089, 100.71324697449153]
+}
+dfs.append(pd.DataFrame(data))
+
+# Declare result var: 
+result = { 
+    "type": "string", 
+    "value": f"2023년에 아메리카노 소비량을 알려줘." 
+}
+
+### QUERY
+# Extract the year for which we want to know the Americano coffee consumption
+year_of_interest = 2023
+
+# Filter the dataframe for the specified year and type of coffee
+americano_consumption = dfs[0].loc[(dfs[0]['Year'] == year_of_interest) & (dfs[0]['Type of Coffee Consumed'] == 'Americano'), 'Coffee Consumption (kg per capita per year)']
+
+# Check if there are any rows that match the filter condition
+if not americano_consumption.empty:
+    result = {
+        "type": "string",
+        "value": f"2023년에 아메리카노 소비량은 {americano_consumption.iloc[0]} kg."
+    }
+else:
+    result = {
+        "type": "string",
+        "value": f"No Americano coffee consumption data available for 2023."
+    }
+
+print(result)
+            ```
+            
+2024-07-29 13:38:47 [INFO] Executing Step 4: CachePopulation
+2024-07-29 13:38:47 [INFO] Executing Step 5: CodeCleaning
+2024-07-29 13:38:47 [INFO] 
+Code running:
+```
+data = {'Country': ['Country_17', 'Country_42', 'Country_23'], 'Year': [2000, 2009, 2010], 'Coffee Consumption (kg per capita per year)': [4.133277267105609, 7.732850204520401, 9.47324275034405], 'Average Coffee Price (USD per kg)': [7.344434080796206, 11.705041040727467, 5.658486574922111], 'Type of Coffee Consumed': ['Espresso', 'Mocha', 'Americano'], 'Population (millions)': [145.24985042758715, 56.0713521434089, 100.71324697449153]}
+dfs.append(pd.DataFrame(data))
+result = {'type': 'string', 'value': f'2023년에 아메리카노 소비량을 알려줘.'}
+year_of_interest = 2023
+americano_consumption = dfs[0].loc[(dfs[0]['Year'] == year_of_interest) & (dfs[0]['Type of Coffee Consumed'] == 'Americano'), 'Coffee Consumption (kg per capita per year)']
+if not americano_consumption.empty:
+    result = {'type': 'string', 'value': f'2023년에 아메리카노 소비량은 {americano_consumption.iloc[0]} kg.'}
+else:
+    result = {'type': 'string', 'value': f'No Americano coffee consumption data available for 2023.'}
+print(result)
+        ```
+2024-07-29 13:38:47 [INFO] Executing Step 6: CodeExecution
+2024-07-29 13:38:47 [INFO] Executing Step 7: ResultValidation
+2024-07-29 13:38:47 [INFO] Answer: {'type': 'string', 'value': '2023년에 아메리카노 소비량은 9.25393898058043 kg.'}
+2024-07-29 13:38:47 [INFO] Executing Step 8: ResultParsing
+2024-07-29 13:45:07 [INFO] Question: 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+2024-07-29 13:45:07 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-07-29 13:45:07 [INFO] Prompt ID: 4c6375f7-a3c4-45d1-a9f9-3baf3f3ac38d
+2024-07-29 13:45:07 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-29 13:45:07 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-29 13:45:07 [INFO] Executing Step 1: CacheLookup
+2024-07-29 13:45:07 [INFO] Executing Step 2: PromptGeneration
+2024-07-29 13:45:07 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_7,2007,6.260118958052161,6.618959002490298,Latte,38.446492298493304
+Country_27,2008,9.92580044198084,11.671680039711108,Cappuccino,136.41647047555543
+Country_10,2009,5.614869321073924,7.968018829456947,Americano,44.964039978685726
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-29 13:45:07 [INFO] Executing Step 3: CodeGenerator
+2024-07-29 13:45:08 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:45:21 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_7,2007,6.260118958052161,6.618959002490298,Latte,38.446492298493304
+Country_27,2008,9.92580044198084,11.671680039711108,Cappuccino,136.41647047555543
+Country_10,2009,5.614869321073924,7.968018829456947,Americano,44.964039978685726
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-07-29 13:45:21 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Declare result var: 
+dfs = [pd.DataFrame({
+    "Country": ["Country_7", "Country_27", "Country_10"],
+    "Year": [2007, 2008, 2009],
+    "Coffee Consumption (kg per capita per year)": [6.260118958052161, 9.92580044198084, 5.614869321073924],
+    "Average Coffee Price (USD per kg)": [6.618959002490298, 11.671680039711108, 7.968018829456947],
+    "Type of Coffee Consumed": ["Latte", "Cappuccino", "Americano"],
+    "Population (millions)": [38.446492298493304, 136.41647047555543, 44.964039978685726]
+})]
+
+# Write code here
+def calculate_coffee_consumption_by_type(dfs):
+    # Calculate total coffee consumption by type for each year from 2010 to 2023
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[(dfs[0]['Year'] == year-1)]  # Get the data for previous year to fill missing values for current year
+        if coffee_consumption_by_type.empty:
+            continue
+
+        # Fill missing coffee consumption by type with zero
+        coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'] = coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'].fillna(0)
+
+        # Group data by 'Type of Coffee Consumed' and calculate sum of 'Coffee Consumption (kg per capita per year)'
+        coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+
+        result[year] = {'Latte': 0, 'Cappuccino': 0, 'Americano': 0}
+        for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+            if type_of_coffee in coffee_consumption_sum_by_type.index:
+                result[year][type_of_coffee] = round(coffee_consumption_sum_by_type[type_of_coffee], 2)
+    
+    return result
+
+result = calculate_coffee_consumption_by_type(dfs)
+
+# Declare result var: 
+print({
+    "type": "dataframe",
+    "value": pd.DataFrame(result).T
+})
+            ```
+            
+2024-07-29 13:45:21 [INFO] Executing Step 4: CachePopulation
+2024-07-29 13:45:21 [INFO] Executing Step 5: CodeCleaning
+2024-07-29 13:45:21 [INFO] 
+Code running:
+```
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == year - 1]
+        if coffee_consumption_by_type.empty:
+            continue
+        coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'] = coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'].fillna(0)
+        coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+        result[year] = {'Latte': 0, 'Cappuccino': 0, 'Americano': 0}
+        for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+            if type_of_coffee in coffee_consumption_sum_by_type.index:
+                result[year][type_of_coffee] = round(coffee_consumption_sum_by_type[type_of_coffee], 2)
+    return result
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+        ```
+2024-07-29 13:45:21 [INFO] Executing Step 6: CodeExecution
+2024-07-29 13:45:21 [ERROR] Unable to extract filters for passed code
+2024-07-29 13:45:21 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+2024-07-29 13:45:21 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-07-29 13:45:21 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-29 13:45:21 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-29 13:45:21 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_7,2007,6.260118958052161,6.618959002490298,Latte,38.446492298493304
+Country_27,2008,9.92580044198084,11.671680039711108,Cappuccino,136.41647047555543
+Country_10,2009,5.614869321073924,7.968018829456947,Americano,44.964039978685726
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == year - 1]
+        if coffee_consumption_by_type.empty:
+            continue
+        coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'] = coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'].fillna(0)
+        coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+        result[year] = {'Latte': 0, 'Cappuccino': 0, 'Americano': 0}
+        for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+            if type_of_coffee in coffee_consumption_sum_by_type.index:
+                result[year][type_of_coffee] = round(coffee_consumption_sum_by_type[type_of_coffee], 2)
+    return result
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+2024-07-29 13:45:21 [INFO] Executing Step 1: CodeGenerator
+2024-07-29 13:45:22 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:45:28 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_7,2007,6.260118958052161,6.618959002490298,Latte,38.446492298493304
+Country_27,2008,9.92580044198084,11.671680039711108,Cappuccino,136.41647047555543
+Country_10,2009,5.614869321073924,7.968018829456947,Americano,44.964039978685726
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == year - 1]
+        if coffee_consumption_by_type.empty:
+            continue
+        coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'] = coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'].fillna(0)
+        coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+        result[year] = {'Latte': 0, 'Cappuccino': 0, 'Americano': 0}
+        for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+            if type_of_coffee in coffee_consumption_sum_by_type.index:
+                result[year][type_of_coffee] = round(coffee_consumption_sum_by_type[type_of_coffee], 2)
+    return result
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-29 13:45:28 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+def calculate_coffee_consumption_by_type(dfs):
+    result = []
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == str(year - 1)]
+        if not coffee_consumption_by_type.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+                result.append({'type': type_of_coffee, 'value': round(coffee_consumption_sum_by_type[type_of_coffee], 2)})
+    return pd.DataFrame(result)
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': result})
+            ```
+            
+2024-07-29 13:45:28 [INFO] Executing Step 2: CodeCleaning
+2024-07-29 13:45:28 [INFO] 
+Code running:
+```
+def calculate_coffee_consumption_by_type(dfs):
+    result = []
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == str(year - 1)]
+        if not coffee_consumption_by_type.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+                result.append({'type': type_of_coffee, 'value': round(coffee_consumption_sum_by_type[type_of_coffee], 2)})
+    return pd.DataFrame(result)
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': result})
+        ```
+2024-07-29 13:45:28 [ERROR] Unable to extract filters for passed code
+2024-07-29 13:45:28 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+2024-07-29 13:45:28 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2024-07-29 13:45:28 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-29 13:45:28 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-29 13:45:28 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_7,2007,6.260118958052161,6.618959002490298,Latte,38.446492298493304
+Country_27,2008,9.92580044198084,11.671680039711108,Cappuccino,136.41647047555543
+Country_10,2009,5.614869321073924,7.968018829456947,Americano,44.964039978685726
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = []
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == str(year - 1)]
+        if not coffee_consumption_by_type.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+                result.append({'type': type_of_coffee, 'value': round(coffee_consumption_sum_by_type[type_of_coffee], 2)})
+    return pd.DataFrame(result)
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': result})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+2024-07-29 13:45:28 [INFO] Executing Step 1: CodeGenerator
+2024-07-29 13:45:29 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:45:41 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_7,2007,6.260118958052161,6.618959002490298,Latte,38.446492298493304
+Country_27,2008,9.92580044198084,11.671680039711108,Cappuccino,136.41647047555543
+Country_10,2009,5.614869321073924,7.968018829456947,Americano,44.964039978685726
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = []
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == str(year - 1)]
+        if not coffee_consumption_by_type.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+                result.append({'type': type_of_coffee, 'value': round(coffee_consumption_sum_by_type[type_of_coffee], 2)})
+    return pd.DataFrame(result)
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': result})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-29 13:45:41 [INFO] Code generated:
+            ```
+            def calculate_coffee_consumption_by_type(dfs):
+    result = []
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == str(year - 1)]
+        if not coffee_consumption_by_type.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+                result.append({'type': type_of_coffee, 'value': round(coffee_consumption_sum_by_type[type_of_coffee], 2)})
+    return {'type': 'dataframe', 'value': pd.DataFrame(result)}
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print(result)
+            ```
+            
+2024-07-29 13:45:41 [INFO] Executing Step 2: CodeCleaning
+2024-07-29 13:45:41 [INFO] 
+Code running:
+```
+def calculate_coffee_consumption_by_type(dfs):
+    result = []
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == str(year - 1)]
+        if not coffee_consumption_by_type.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+                result.append({'type': type_of_coffee, 'value': round(coffee_consumption_sum_by_type[type_of_coffee], 2)})
+    return {'type': 'dataframe', 'value': pd.DataFrame(result)}
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print(result)
+        ```
+2024-07-29 13:45:41 [ERROR] Unable to extract filters for passed code
+2024-07-29 13:45:41 [INFO] Executing Step 7: ResultValidation
+2024-07-29 13:45:41 [INFO] Answer: {'type': 'dataframe', 'value': Empty DataFrame
+Columns: []
+Index: []}
+2024-07-29 13:45:41 [INFO] Executing Step 8: ResultParsing
+2024-07-29 13:46:09 [INFO] Question: 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+2024-07-29 13:46:09 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-07-29 13:46:09 [INFO] Prompt ID: 53ef80f5-1106-4b77-91b6-0b9d3c0ae037
+2024-07-29 13:46:09 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-29 13:46:09 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-29 13:46:09 [INFO] Executing Step 1: CacheLookup
+2024-07-29 13:46:09 [INFO] Using cached response
+2024-07-29 13:46:09 [INFO] Executing Step 2: PromptGeneration
+2024-07-29 13:46:09 [INFO] Executing Step 2: Skipping...
+2024-07-29 13:46:09 [INFO] Executing Step 3: CodeGenerator
+2024-07-29 13:46:09 [INFO] Executing Step 3: Skipping...
+2024-07-29 13:46:09 [INFO] Executing Step 4: CachePopulation
+2024-07-29 13:46:09 [INFO] Executing Step 4: Skipping...
+2024-07-29 13:46:09 [INFO] Executing Step 5: CodeCleaning
+2024-07-29 13:46:09 [INFO] 
+Code running:
+```
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == year - 1]
+        if coffee_consumption_by_type.empty:
+            continue
+        coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'] = coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'].fillna(0)
+        coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+        result[year] = {'Latte': 0, 'Cappuccino': 0, 'Americano': 0}
+        for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+            if type_of_coffee in coffee_consumption_sum_by_type.index:
+                result[year][type_of_coffee] = round(coffee_consumption_sum_by_type[type_of_coffee], 2)
+    return result
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+        ```
+2024-07-29 13:46:09 [INFO] Executing Step 6: CodeExecution
+2024-07-29 13:46:09 [ERROR] Unable to extract filters for passed code
+2024-07-29 13:46:09 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+2024-07-29 13:46:09 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-07-29 13:46:09 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-29 13:46:09 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-29 13:46:09 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2002,4.202758801107553,13.392046120008493,Cappuccino,16.398948481191525
+Country_10,2022,7.297018790833991,5.740154212989226,Espresso,130.61629877375938
+Country_29,2010,7.907400809943066,8.293265706149313,Mocha,72.23063437498192
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == year - 1]
+        if coffee_consumption_by_type.empty:
+            continue
+        coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'] = coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'].fillna(0)
+        coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+        result[year] = {'Latte': 0, 'Cappuccino': 0, 'Americano': 0}
+        for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+            if type_of_coffee in coffee_consumption_sum_by_type.index:
+                result[year][type_of_coffee] = round(coffee_consumption_sum_by_type[type_of_coffee], 2)
+    return result
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+2024-07-29 13:46:09 [INFO] Executing Step 1: CodeGenerator
+2024-07-29 13:46:10 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:46:16 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2002,4.202758801107553,13.392046120008493,Cappuccino,16.398948481191525
+Country_10,2022,7.297018790833991,5.740154212989226,Espresso,130.61629877375938
+Country_29,2010,7.907400809943066,8.293265706149313,Mocha,72.23063437498192
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == year - 1]
+        if coffee_consumption_by_type.empty:
+            continue
+        coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'] = coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'].fillna(0)
+        coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+        result[year] = {'Latte': 0, 'Cappuccino': 0, 'Americano': 0}
+        for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+            if type_of_coffee in coffee_consumption_sum_by_type.index:
+                result[year][type_of_coffee] = round(coffee_consumption_sum_by_type[type_of_coffee], 2)
+    return result
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-29 13:46:16 [INFO] Code generated:
+            ```
+            def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_year = dfs[0].copy().loc[dfs[0]['Year'] == year - 1]
+        if not coffee_consumption_by_year.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_year.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            result[year] = coffee_consumption_sum_by_type.to_dict()
+    return result
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+            ```
+            
+2024-07-29 13:46:16 [INFO] Executing Step 2: CodeCleaning
+2024-07-29 13:46:16 [INFO] 
+Code running:
+```
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_year = dfs[0].copy().loc[dfs[0]['Year'] == year - 1]
+        if not coffee_consumption_by_year.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_year.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            result[year] = coffee_consumption_sum_by_type.to_dict()
+    return result
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+        ```
+2024-07-29 13:46:16 [ERROR] Unable to extract filters for passed code
+2024-07-29 13:46:16 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+2024-07-29 13:46:16 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2024-07-29 13:46:16 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-29 13:46:16 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-29 13:46:16 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2002,4.202758801107553,13.392046120008493,Cappuccino,16.398948481191525
+Country_10,2022,7.297018790833991,5.740154212989226,Espresso,130.61629877375938
+Country_29,2010,7.907400809943066,8.293265706149313,Mocha,72.23063437498192
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_year = dfs[0].copy().loc[dfs[0]['Year'] == year - 1]
+        if not coffee_consumption_by_year.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_year.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            result[year] = coffee_consumption_sum_by_type.to_dict()
+    return result
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+2024-07-29 13:46:16 [INFO] Executing Step 1: CodeGenerator
+2024-07-29 13:46:17 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:46:25 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2002,4.202758801107553,13.392046120008493,Cappuccino,16.398948481191525
+Country_10,2022,7.297018790833991,5.740154212989226,Espresso,130.61629877375938
+Country_29,2010,7.907400809943066,8.293265706149313,Mocha,72.23063437498192
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_year = dfs[0].copy().loc[dfs[0]['Year'] == year - 1]
+        if not coffee_consumption_by_year.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_year.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            result[year] = coffee_consumption_sum_by_type.to_dict()
+    return result
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-29 13:46:25 [INFO] Code generated:
+            ```
+            result[year] = coffee_consumption_sum_by_type.to_dict()
+            ```
+            
+2024-07-29 13:46:25 [INFO] Executing Step 2: CodeCleaning
+2024-07-29 13:46:25 [INFO] 
+Code running:
+```
+result[year] = coffee_consumption_sum_by_type.to_dict()
+        ```
+2024-07-29 13:46:25 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'coffee_consumption_sum_by_type' is not defined
+
+2024-07-29 13:46:25 [WARNING] Failed to execute code retrying with a correction framework [retry number: 3]
+2024-07-29 13:46:25 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-29 13:46:25 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-29 13:46:25 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2002,4.202758801107553,13.392046120008493,Cappuccino,16.398948481191525
+Country_10,2022,7.297018790833991,5.740154212989226,Espresso,130.61629877375938
+Country_29,2010,7.907400809943066,8.293265706149313,Mocha,72.23063437498192
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+result[year] = coffee_consumption_sum_by_type.to_dict()
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'coffee_consumption_sum_by_type' is not defined
+
+
+Fix the python code above and return the new python code:
+2024-07-29 13:46:25 [INFO] Executing Step 1: CodeGenerator
+2024-07-29 13:46:25 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:46:36 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_42,2002,4.202758801107553,13.392046120008493,Cappuccino,16.398948481191525
+Country_10,2022,7.297018790833991,5.740154212989226,Espresso,130.61629877375938
+Country_29,2010,7.907400809943066,8.293265706149313,Mocha,72.23063437498192
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+result[year] = coffee_consumption_sum_by_type.to_dict()
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'coffee_consumption_sum_by_type' is not defined
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-29 13:46:36 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# assuming df is your DataFrame
+df = pd.DataFrame({
+    'Country': ['Country_42', 'Country_10', 'Country_29'],
+    'Year': [2002, 2022, 2010],
+    'Coffee Consumption (kg per capita per year)': [4.202758801107553, 7.297018790833991, 7.907400809943066],
+    'Average Coffee Price (USD per kg)': [13.392046120008493, 5.740154212989226, 8.293265706149313],
+    'Type of Coffee Consumed': ['Cappuccino', 'Espresso', 'Mocha'],
+    'Population (millions)': [16.398948481191525, 130.61629877375938, 72.23063437498192]
+})
+
+# group the data by type of coffee consumed and sum up the coffee consumption for each year
+coffee_consumption_sum_by_type = df.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+
+# filter the data for years from 2010 to 2023
+filtered_data = df[(df['Year'] >= 2010) & (df['Year'] <= 2023)]
+
+# group the filtered data by type of coffee consumed and sum up the coffee consumption for each year
+result = filtered_data.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum().to_dict()
+
+print(result)
+            ```
+            
+2024-07-29 13:46:36 [INFO] Executing Step 2: CodeCleaning
+2024-07-29 13:46:36 [INFO] 
+Code running:
+```
+df = dfs[0]
+coffee_consumption_sum_by_type = df.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+filtered_data = df[(df['Year'] >= 2010) & (df['Year'] <= 2023)]
+result = filtered_data.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum().to_dict()
+print(result)
+        ```
+2024-07-29 13:46:36 [ERROR] Unable to extract filters for passed code
+2024-07-29 13:46:36 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+2024-07-29 13:46:36 [ERROR] Pipeline failed on step 6: Result must be in the format of dictionary of type and value
+2024-07-29 13:46:43 [INFO] Question: 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+2024-07-29 13:46:43 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-07-29 13:46:43 [INFO] Prompt ID: f187f882-289b-46fb-84c8-af71d6c699ea
+2024-07-29 13:46:43 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-29 13:46:43 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-29 13:46:43 [INFO] Executing Step 1: CacheLookup
+2024-07-29 13:46:43 [INFO] Using cached response
+2024-07-29 13:46:43 [INFO] Executing Step 2: PromptGeneration
+2024-07-29 13:46:43 [INFO] Executing Step 2: Skipping...
+2024-07-29 13:46:43 [INFO] Executing Step 3: CodeGenerator
+2024-07-29 13:46:43 [INFO] Executing Step 3: Skipping...
+2024-07-29 13:46:43 [INFO] Executing Step 4: CachePopulation
+2024-07-29 13:46:43 [INFO] Executing Step 4: Skipping...
+2024-07-29 13:46:43 [INFO] Executing Step 5: CodeCleaning
+2024-07-29 13:46:43 [INFO] 
+Code running:
+```
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == year - 1]
+        if coffee_consumption_by_type.empty:
+            continue
+        coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'] = coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'].fillna(0)
+        coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+        result[year] = {'Latte': 0, 'Cappuccino': 0, 'Americano': 0}
+        for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+            if type_of_coffee in coffee_consumption_sum_by_type.index:
+                result[year][type_of_coffee] = round(coffee_consumption_sum_by_type[type_of_coffee], 2)
+    return result
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+        ```
+2024-07-29 13:46:43 [INFO] Executing Step 6: CodeExecution
+2024-07-29 13:46:43 [ERROR] Unable to extract filters for passed code
+2024-07-29 13:46:43 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+2024-07-29 13:46:43 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-07-29 13:46:43 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-29 13:46:43 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-29 13:46:43 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_37,2002,2.76131120064172,5.973293878485807,Latte,87.97789415028171
+Country_13,2016,8.036316261563101,8.990053545880794,Mocha,69.24770612769771
+Country_26,2003,7.8024846043256035,11.876365584354602,Cappuccino,51.05951623043464
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == year - 1]
+        if coffee_consumption_by_type.empty:
+            continue
+        coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'] = coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'].fillna(0)
+        coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+        result[year] = {'Latte': 0, 'Cappuccino': 0, 'Americano': 0}
+        for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+            if type_of_coffee in coffee_consumption_sum_by_type.index:
+                result[year][type_of_coffee] = round(coffee_consumption_sum_by_type[type_of_coffee], 2)
+    return result
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+2024-07-29 13:46:43 [INFO] Executing Step 1: CodeGenerator
+2024-07-29 13:46:44 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:46:55 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_37,2002,2.76131120064172,5.973293878485807,Latte,87.97789415028171
+Country_13,2016,8.036316261563101,8.990053545880794,Mocha,69.24770612769771
+Country_26,2003,7.8024846043256035,11.876365584354602,Cappuccino,51.05951623043464
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_type = dfs[0].copy().loc[dfs[0]['Year'] == year - 1]
+        if coffee_consumption_by_type.empty:
+            continue
+        coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'] = coffee_consumption_by_type['Coffee Consumption (kg per capita per year)'].fillna(0)
+        coffee_consumption_sum_by_type = coffee_consumption_by_type.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+        result[year] = {'Latte': 0, 'Cappuccino': 0, 'Americano': 0}
+        for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']:
+            if type_of_coffee in coffee_consumption_sum_by_type.index:
+                result[year][type_of_coffee] = round(coffee_consumption_sum_by_type[type_of_coffee], 2)
+    return result
+
+
+result = calculate_coffee_consumption_by_type(dfs)
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-29 13:46:55 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024): # corrected upper limit to include 2023
+        coffee_consumption_by_year = dfs[0].copy().loc[dfs[0]['Year'] == str(year)]
+        if not coffee_consumption_by_year.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_year.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            result[year] = {type_of_coffee: round(coffee_consumption_sum_by_type[type_of_coffee], 2) for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']}
+    return result
+
+result = calculate_coffee_consumption_by_type([pd.DataFrame({
+    "Country": ["Country_37", "Country_13", "Country_26"],
+    "Year": [2002, 2016, 2003],
+    "Coffee Consumption (kg per capita per year)": [2.76131120064172, 8.036316261563101, 7.8024846043256035],
+    "Average Coffee Price (USD per kg)": [5.973293878485807, 8.990053545880794, 11.876365584354602],
+    "Type of Coffee Consumed": ["Latte", "Mocha", "Cappuccino"],
+    "Population (millions)": [87.97789415028171, 69.24770612769771, 51.05951623043464]
+})])
+
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+            ```
+            
+2024-07-29 13:46:55 [INFO] Executing Step 2: CodeCleaning
+2024-07-29 13:46:55 [INFO] 
+Code running:
+```
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_year = dfs[0].copy().loc[dfs[0]['Year'] == str(year)]
+        if not coffee_consumption_by_year.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_year.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            result[year] = {type_of_coffee: round(coffee_consumption_sum_by_type[type_of_coffee], 2) for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']}
+    return result
+
+
+result = calculate_coffee_consumption_by_type([pd.DataFrame({'Country': ['Country_37', 'Country_13', 'Country_26'], 'Year': [2002, 2016, 2003], 'Coffee Consumption (kg per capita per year)': [2.76131120064172, 8.036316261563101, 7.8024846043256035], 'Average Coffee Price (USD per kg)': [5.973293878485807, 8.990053545880794, 11.876365584354602], 'Type of Coffee Consumed': ['Latte', 'Mocha', 'Cappuccino'], 'Population (millions)': [87.97789415028171, 69.24770612769771, 51.05951623043464]})])
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+        ```
+2024-07-29 13:46:55 [ERROR] Unable to extract filters for passed code
+2024-07-29 13:46:55 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+2024-07-29 13:46:55 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2024-07-29 13:46:55 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-29 13:46:55 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-29 13:46:55 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_37,2002,2.76131120064172,5.973293878485807,Latte,87.97789415028171
+Country_13,2016,8.036316261563101,8.990053545880794,Mocha,69.24770612769771
+Country_26,2003,7.8024846043256035,11.876365584354602,Cappuccino,51.05951623043464
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_year = dfs[0].copy().loc[dfs[0]['Year'] == str(year)]
+        if not coffee_consumption_by_year.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_year.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            result[year] = {type_of_coffee: round(coffee_consumption_sum_by_type[type_of_coffee], 2) for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']}
+    return result
+
+
+result = calculate_coffee_consumption_by_type([pd.DataFrame({'Country': ['Country_37', 'Country_13', 'Country_26'], 'Year': [2002, 2016, 2003], 'Coffee Consumption (kg per capita per year)': [2.76131120064172, 8.036316261563101, 7.8024846043256035], 'Average Coffee Price (USD per kg)': [5.973293878485807, 8.990053545880794, 11.876365584354602], 'Type of Coffee Consumed': ['Latte', 'Mocha', 'Cappuccino'], 'Population (millions)': [87.97789415028171, 69.24770612769771, 51.05951623043464]})])
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+2024-07-29 13:46:55 [INFO] Executing Step 1: CodeGenerator
+2024-07-29 13:46:56 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:47:09 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_37,2002,2.76131120064172,5.973293878485807,Latte,87.97789415028171
+Country_13,2016,8.036316261563101,8.990053545880794,Mocha,69.24770612769771
+Country_26,2003,7.8024846043256035,11.876365584354602,Cappuccino,51.05951623043464
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    for year in range(2010, 2024):
+        coffee_consumption_by_year = dfs[0].copy().loc[dfs[0]['Year'] == str(year)]
+        if not coffee_consumption_by_year.empty:
+            coffee_consumption_sum_by_type = coffee_consumption_by_year.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+            result[year] = {type_of_coffee: round(coffee_consumption_sum_by_type[type_of_coffee], 2) for type_of_coffee in ['Latte', 'Cappuccino', 'Americano']}
+    return result
+
+
+result = calculate_coffee_consumption_by_type([pd.DataFrame({'Country': ['Country_37', 'Country_13', 'Country_26'], 'Year': [2002, 2016, 2003], 'Coffee Consumption (kg per capita per year)': [2.76131120064172, 8.036316261563101, 7.8024846043256035], 'Average Coffee Price (USD per kg)': [5.973293878485807, 8.990053545880794, 11.876365584354602], 'Type of Coffee Consumed': ['Latte', 'Mocha', 'Cappuccino'], 'Population (millions)': [87.97789415028171, 69.24770612769771, 51.05951623043464]})])
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-29 13:47:09 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    dfs[0]['Year'] = dfs[0]['Year'].astype(int)
+    start_year = 2010
+    end_year = 2023
+    
+    # Find rows for the specified years
+    coffee_consumption_by_years = dfs[0].loc[(dfs[0]['Year'] >= start_year) & (dfs[0]['Year'] <= end_year)]
+    
+    if not coffee_consumption_by_years.empty:
+        # Group by type and sum up the consumption
+        coffee_consumption_sum_by_type = coffee_consumption_by_years.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+        
+        # Create a dictionary with types as keys and summed consumption as values
+        result = {type_of_coffee: round(coffee_consumption_sum_by_type[type_of_coffee], 2) for type_of_coffee in coffee_consumption_sum_by_type.index}
+    
+    return result
+
+
+result = calculate_coffee_consumption_by_type([pd.DataFrame({'Country': ['Country_37', 'Country_13', 'Country_26'], 'Year': [2002, 2016, 2003], 'Coffee Consumption (kg per capita per year)': [2.76131120064172, 8.036316261563101, 7.8024846043256035], 'Average Coffee Price (USD per kg)': [5.973293878485807, 8.990053545880794, 11.876365584354602], 'Type of Coffee Consumed': ['Latte', 'Mocha', 'Cappuccino'], 'Population (millions)': [87.97789415028171, 69.24770612769771, 51.05951623043464]})])
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+            ```
+            
+2024-07-29 13:47:09 [INFO] Executing Step 2: CodeCleaning
+2024-07-29 13:47:09 [INFO] 
+Code running:
+```
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    dfs[0]['Year'] = dfs[0]['Year'].astype(int)
+    start_year = 2010
+    end_year = 2023
+    coffee_consumption_by_years = dfs[0].loc[(dfs[0]['Year'] >= start_year) & (dfs[0]['Year'] <= end_year)]
+    if not coffee_consumption_by_years.empty:
+        coffee_consumption_sum_by_type = coffee_consumption_by_years.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+        result = {type_of_coffee: round(coffee_consumption_sum_by_type[type_of_coffee], 2) for type_of_coffee in coffee_consumption_sum_by_type.index}
+    return result
+
+
+result = calculate_coffee_consumption_by_type([pd.DataFrame({'Country': ['Country_37', 'Country_13', 'Country_26'], 'Year': [2002, 2016, 2003], 'Coffee Consumption (kg per capita per year)': [2.76131120064172, 8.036316261563101, 7.8024846043256035], 'Average Coffee Price (USD per kg)': [5.973293878485807, 8.990053545880794, 11.876365584354602], 'Type of Coffee Consumed': ['Latte', 'Mocha', 'Cappuccino'], 'Population (millions)': [87.97789415028171, 69.24770612769771, 51.05951623043464]})])
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+        ```
+2024-07-29 13:47:09 [ERROR] Unable to extract filters for passed code
+2024-07-29 13:47:09 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 14, in <module>
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandas/core/frame.py", line 664, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandas/core/internals/construction.py", line 493, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandas/core/internals/construction.py", line 118, in arrays_to_mgr
+    index = _extract_index(arrays)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandas/core/internals/construction.py", line 656, in _extract_index
+    raise ValueError("If using all scalar values, you must pass an index")
+ValueError: If using all scalar values, you must pass an index
+
+2024-07-29 13:47:09 [WARNING] Failed to execute code retrying with a correction framework [retry number: 3]
+2024-07-29 13:47:09 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-29 13:47:09 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-29 13:47:09 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_37,2002,2.76131120064172,5.973293878485807,Latte,87.97789415028171
+Country_13,2016,8.036316261563101,8.990053545880794,Mocha,69.24770612769771
+Country_26,2003,7.8024846043256035,11.876365584354602,Cappuccino,51.05951623043464
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    dfs[0]['Year'] = dfs[0]['Year'].astype(int)
+    start_year = 2010
+    end_year = 2023
+    coffee_consumption_by_years = dfs[0].loc[(dfs[0]['Year'] >= start_year) & (dfs[0]['Year'] <= end_year)]
+    if not coffee_consumption_by_years.empty:
+        coffee_consumption_sum_by_type = coffee_consumption_by_years.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+        result = {type_of_coffee: round(coffee_consumption_sum_by_type[type_of_coffee], 2) for type_of_coffee in coffee_consumption_sum_by_type.index}
+    return result
+
+
+result = calculate_coffee_consumption_by_type([pd.DataFrame({'Country': ['Country_37', 'Country_13', 'Country_26'], 'Year': [2002, 2016, 2003], 'Coffee Consumption (kg per capita per year)': [2.76131120064172, 8.036316261563101, 7.8024846043256035], 'Average Coffee Price (USD per kg)': [5.973293878485807, 8.990053545880794, 11.876365584354602], 'Type of Coffee Consumed': ['Latte', 'Mocha', 'Cappuccino'], 'Population (millions)': [87.97789415028171, 69.24770612769771, 51.05951623043464]})])
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 14, in <module>
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandas/core/frame.py", line 664, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandas/core/internals/construction.py", line 493, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandas/core/internals/construction.py", line 118, in arrays_to_mgr
+    index = _extract_index(arrays)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandas/core/internals/construction.py", line 656, in _extract_index
+    raise ValueError("If using all scalar values, you must pass an index")
+ValueError: If using all scalar values, you must pass an index
+
+
+Fix the python code above and return the new python code:
+2024-07-29 13:47:09 [INFO] Executing Step 1: CodeGenerator
+2024-07-29 13:47:10 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:47:23 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_37,2002,2.76131120064172,5.973293878485807,Latte,87.97789415028171
+Country_13,2016,8.036316261563101,8.990053545880794,Mocha,69.24770612769771
+Country_26,2003,7.8024846043256035,11.876365584354602,Cappuccino,51.05951623043464
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 2010 년 부터 2023년 까지의 커피별 소비량을 알려줘
+
+
+
+You generated this python code:
+def calculate_coffee_consumption_by_type(dfs):
+    result = {}
+    dfs[0]['Year'] = dfs[0]['Year'].astype(int)
+    start_year = 2010
+    end_year = 2023
+    coffee_consumption_by_years = dfs[0].loc[(dfs[0]['Year'] >= start_year) & (dfs[0]['Year'] <= end_year)]
+    if not coffee_consumption_by_years.empty:
+        coffee_consumption_sum_by_type = coffee_consumption_by_years.groupby('Type of Coffee Consumed')['Coffee Consumption (kg per capita per year)'].sum()
+        result = {type_of_coffee: round(coffee_consumption_sum_by_type[type_of_coffee], 2) for type_of_coffee in coffee_consumption_sum_by_type.index}
+    return result
+
+
+result = calculate_coffee_consumption_by_type([pd.DataFrame({'Country': ['Country_37', 'Country_13', 'Country_26'], 'Year': [2002, 2016, 2003], 'Coffee Consumption (kg per capita per year)': [2.76131120064172, 8.036316261563101, 7.8024846043256035], 'Average Coffee Price (USD per kg)': [5.973293878485807, 8.990053545880794, 11.876365584354602], 'Type of Coffee Consumed': ['Latte', 'Mocha', 'Cappuccino'], 'Population (millions)': [87.97789415028171, 69.24770612769771, 51.05951623043464]})])
+print({'type': 'dataframe', 'value': pd.DataFrame(result).T})
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 14, in <module>
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandas/core/frame.py", line 664, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandas/core/internals/construction.py", line 493, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandas/core/internals/construction.py", line 118, in arrays_to_mgr
+    index = _extract_index(arrays)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandas/core/internals/construction.py", line 656, in _extract_index
+    raise ValueError("If using all scalar values, you must pass an index")
+ValueError: If using all scalar values, you must pass an index
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-29 13:47:23 [INFO] Code generated:
+            ```
+            result = pd.DataFrame(result).T
+            ```
+            
+2024-07-29 13:47:23 [INFO] Executing Step 2: CodeCleaning
+2024-07-29 13:47:23 [INFO] 
+Code running:
+```
+result = pd.DataFrame(result).T
+        ```
+2024-07-29 13:47:23 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/usermackbookpro/miniconda3/envs/pandasai/lib/python3.12/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'result' is not defined
+
+2024-07-29 13:47:23 [ERROR] Pipeline failed on step 6: name 'result' is not defined
+2024-07-29 13:47:50 [INFO] Question: 각나라별 커피 가격을 표형태로 알려줘
+
+
+2024-07-29 13:47:50 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-07-29 13:47:50 [INFO] Prompt ID: 8f1f66a0-244b-47a6-bd90-163d00dd6c4b
+2024-07-29 13:47:50 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-29 13:47:50 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-29 13:47:50 [INFO] Executing Step 1: CacheLookup
+2024-07-29 13:47:50 [INFO] Executing Step 2: PromptGeneration
+2024-07-29 13:47:50 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_5,2010,8.898013026419898,11.58761026254049,Cappuccino,31.20532083976856
+Country_36,2022,6.304775483782696,7.040747728708885,Americano,23.620284296507748
+Country_37,2023,2.0764654891845487,4.0588096190433305,Latte,120.67434274361968
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 각나라별 커피 가격을 표형태로 알려줘
+
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-29 13:47:50 [INFO] Executing Step 3: CodeGenerator
+2024-07-29 13:47:51 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-07-29 13:47:59 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:10000x6
+Country,Year,Coffee Consumption (kg per capita per year),Average Coffee Price (USD per kg),Type of Coffee Consumed,Population (millions)
+Country_5,2010,8.898013026419898,11.58761026254049,Cappuccino,31.20532083976856
+Country_36,2022,6.304775483782696,7.040747728708885,Americano,23.620284296507748
+Country_37,2023,2.0764654891845487,4.0588096190433305,Latte,120.67434274361968
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 각나라별 커피 가격을 표형태로 알려줘
+
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-07-29 13:47:59 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Declare result var: 
+dfs = [pd.DataFrame({
+    'Country': ['Country_5', 'Country_36', 'Country_37'],
+    'Year': [2010, 2022, 2023],
+    'Coffee Consumption (kg per capita per year)': [8.898013026419898, 6.304775483782696, 2.0764654891845487],
+    'Average Coffee Price (USD per kg)': [11.58761026254049, 7.040747728708885, 4.0588096190433305],
+    'Type of Coffee Consumed': ['Cappuccino', 'Americano', 'Latte'],
+    'Population (millions)': [31.20532083976856, 23.620284296507748, 120.67434274361968]
+})]
+
+# Write code here
+result = {
+  "type": "dataframe",
+  "value": dfs[0].groupby(['Country', 'Year'])[['Average Coffee Price (USD per kg)']].mean().unstack('Country')
+}
+
+# Print result
+print(result)
+            ```
+            
+2024-07-29 13:47:59 [INFO] Executing Step 4: CachePopulation
+2024-07-29 13:47:59 [INFO] Executing Step 5: CodeCleaning
+2024-07-29 13:47:59 [INFO] 
+Code running:
+```
+result = {'type': 'dataframe', 'value': dfs[0].groupby(['Country', 'Year'])[['Average Coffee Price (USD per kg)']].mean().unstack('Country')}
+print(result)
+        ```
+2024-07-29 13:47:59 [INFO] Executing Step 6: CodeExecution
+2024-07-29 13:47:59 [INFO] Executing Step 7: ResultValidation
+2024-07-29 13:47:59 [INFO] Answer: {'type': 'dataframe', 'value':         Average Coffee Price (USD per kg)                        ...                                 
+Country                         Country_1 Country_10 Country_11  ...  Country_7  Country_8  Country_9
+Year                                                             ...                                 
+2000                            10.042659   9.134753   7.230138  ...  10.247841   6.841292   9.419086
+2001                             8.861156   7.491293  12.629377  ...   8.111050  10.921006  10.827084
+2002                             9.353064   7.773751  11.341637  ...   9.261142   9.072028   8.112556
+2003                             9.182075   9.136726  11.178152  ...   8.844946   9.737543   9.076219
+2004                             9.337205   7.927809   7.836889  ...   8.665471   8.160680   8.663981
+2005                             8.752366   8.958289   8.620345  ...   8.467210   7.963373  10.181515
+2006                             9.704184   7.741448  12.316024  ...   7.885865   9.870379  12.297569
+2007                             8.532515   9.566406   8.473677  ...  10.761594  10.341114   9.647659
+2008                             9.886335   9.003052   9.494617  ...   9.921996  11.506000   9.923429
+2009                             7.941609   9.809211   9.713081  ...  10.663330   8.319145   9.239770
+2010                             8.018710   9.387305  11.993161  ...   9.703065   9.885124  10.012055
+2011                             8.902827  12.401025   9.380214  ...  11.271629  11.415918   8.783916
+2012                             9.376636  10.870321  10.490346  ...  10.368993  11.299665   8.811552
+2013                             9.202592   8.102910  10.299505  ...  10.341947  10.572978   9.211866
+2014                             9.431456  10.438807  10.265014  ...  10.944206   8.064627  10.214655
+2015                             9.229263   9.236027   9.530439  ...  10.886234   9.267678   8.055759
+2016                            11.374918   9.763696   9.302812  ...  11.386770  11.136979   9.722207
+2017                            11.767394   9.735301   9.910728  ...        NaN  10.887529   9.611718
+2018                            11.268853   7.916677   9.872772  ...   9.368416   7.473006   8.106989
+2019                             9.380312   8.894827   8.415714  ...   7.879487   9.991536  12.237297
+2020                            11.608226   9.527065   9.290592  ...  10.086351   7.835254   9.495799
+2021                             7.418538   9.041425   9.686173  ...  11.355418  10.376340  10.313448
+2022                             8.481915   9.492178  10.299871  ...  10.720229   9.624468   7.058703
+2023                            10.463372   7.079368  10.264437  ...   9.649856   8.806202  11.232871
+
+[24 rows x 50 columns]}
+2024-07-29 13:47:59 [INFO] Executing Step 8: ResultParsing
