@@ -1,6 +1,7 @@
 # 필요한 모듈을 가져옵니다.
 from fastapi import FastAPI
 from langchain.prompts import ChatPromptTemplate
+from langchain_ollama.llms import OllamaLLM
 from langchain_openai import ChatOpenAI
 from langserve import add_routes
 import uvicorn
@@ -23,11 +24,13 @@ app = FastAPI(
 # OpenAI 모델을 설정합니다.
 # ChatOpenAI 클래스를 사용하여 OpenAI 모델과의 상호작용을 설정합니다.
 # 여기서는 API 키, 온도 설정, 모델 이름을 파라미터로 제공합니다.
-model = ChatOpenAI(
-    api_key=OPENAI_API_KEY,  # OpenAI API 키를 사용하여 인증합니다.
-    temperature=0.7,         # 응답의 창의성(무작위성) 수준을 설정합니다. 0.7은 중간 정도의 창의성을 의미합니다.
-    model='gpt-3.5-turbo'    # 사용할 OpenAI 모델의 이름을 지정합니다.
-)
+# model = ChatOpenAI(
+#     api_key=OPENAI_API_KEY,  # OpenAI API 키를 사용하여 인증합니다.
+#     temperature=0.7,         # 응답의 창의성(무작위성) 수준을 설정합니다. 0.7은 중간 정도의 창의성을 의미합니다.
+#     model='gpt-3.5-turbo'    # 사용할 OpenAI 모델의 이름을 지정합니다.
+# )
+
+model = OllamaLLM(model="llama3.1:8b")
 
 # Langchain API 경로를 추가합니다.
 # add_routes 함수를 사용하여 FastAPI 애플리케이션에 경로를 추가합니다.
