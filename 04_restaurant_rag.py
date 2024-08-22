@@ -14,7 +14,7 @@ restaurant_faiss = os.path.join(current_dir, "restaurant-faiss")
 
 # TextLoader 클래스를 사용하여 "restaurant.txt"라는 파일에서 텍스트를 로드합니다.
 # 윈도우 사용자는 경로 문제시 "loader = TextLoader(f'{current_dir}\\restaurant.txt', encoding='utf-8')" 이 문구로 사용하시면 됩니다.
-loader = TextLoader(f'{current_dir}/restaurant.txt')
+loader = TextLoader(f'{current_dir}/restaurants.txt')
 
 # 파일의 내용을 document 객체로 로드합니다.
 documents = loader.load()
