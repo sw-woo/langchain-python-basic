@@ -1,14 +1,14 @@
 import os
-from dotenv import load_dotenv
-load_dotenv()
-
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 from langchain.chains.sequential import SequentialChain
 from langchain.chains.llm import LLMChain
+from dotenv import load_dotenv
+load_dotenv()
 
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # Temperature 설정
-openai = ChatOpenAI(model="gpt-3.5-turbo", api_key=os.getenv("OPENAI_API_KEY"), temperature=0.7)
+openai = ChatOpenAI(model="gpt-3.5-turbo", api_key=OPENAI_API_KEY, temperature=0.7)
 
 # 프롬프트 템플릿 설정
 prompt1 = PromptTemplate(

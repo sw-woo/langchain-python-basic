@@ -6,14 +6,13 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Temperature 설정
-openai = ChatOpenAI(model="gpt-3.5-turbo",
-                    api_key=os.getenv("OPENAI_API_KEY"), temperature=0.7)
+openai = ChatOpenAI(model="gpt-3.5-turbo", api_key=OPENAI_API_KEY, temperature=0.7)
 
 # Temperature 설정
-# openai = ChatOpenAI(model="gpt-4o",
-#                     api_key=os.getenv("OPENAI_API_KEY"), temperature=0.7)
+# openai = ChatOpenAI(model="gpt-4o", api_key=os.getenv("OPENAI_API_KEY"), temperature=0.7)
 
 # 프롬프트 템플릿 설정
 prompt1 = PromptTemplate.from_template(
@@ -41,7 +40,7 @@ all_chain = SequentialChain(
 # 식당 리뷰 입력
 review = """
 이 식당은 맛도 좋고 분위기도 좋았습니다. 가격 대비 만족도가 높아요.
-하지만, 서비스 속도가 너무 느려서 조금 실망스러웠습니다.
+하지만, 서비스 속도가 너무 느려서 조금 실망스러워습니다.
 전반적으로는 다시 방문할 의사가 있습니다.
 """
 

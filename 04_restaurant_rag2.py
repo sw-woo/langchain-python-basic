@@ -1,7 +1,5 @@
-from langchain_text_splitters import CharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain_community.document_loaders import TextLoader
 import os
 from dotenv import load_dotenv
 import asyncio
@@ -19,8 +17,7 @@ async def main():
 
     # 지정된 임베딩을 사용하여 로컬에 저장된 FAISS 인덱스를 로드합니다.
     # allow_dangerous_deserialization=True 옵션은 역직렬화를 허용합니다.
-    load_db = FAISS.load_local(
-        f'{current_dir}/restaurant-faiss', embeddings, allow_dangerous_deserialization=True)
+    load_db = FAISS.load_local(f'{current_dir}/restaurant-faiss', embeddings, allow_dangerous_deserialization=True)
 
     # 검색할 쿼리 문자열을 정의합니다.
     query = "음식점의 룸 서비스는 어떻게 운영되나요?"

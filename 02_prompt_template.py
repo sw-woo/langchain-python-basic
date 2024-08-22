@@ -1,5 +1,6 @@
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
+from langchain_core.output_parsers import StrOutputParser
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -13,11 +14,10 @@ prompt = PromptTemplate(
 )
 
 # temperature 속성을 설정하여, 낮은 값은 보다 일관된 결과를, 높은 값은 다양한 결과를 생성하도록 합니다.
-openai = ChatOpenAI(model="gpt-3.5-turbo",
-                    api_key=OPENAI_API_KEY, temperature=0.7)
+openai = ChatOpenAI(model="gpt-3.5-turbo",api_key=OPENAI_API_KEY, temperature=0.7)
 
-# | 기호를 사용하여 프롬프트와 llm을 연결할 수 있습니다.
-chain = prompt | openai
+# | 기호를 사용하여 프롬프트와 llm, 출력 파서를 연결할 수 있습니다.
+chain = prompt | openai | StrOutputParser()
 
 # 사용자의 리뷰에 대한 평가를 요청합니다.
 try:

@@ -5,7 +5,7 @@ from langchain_community.document_loaders import TextLoader
 import os
 from dotenv import load_dotenv
 load_dotenv()
-
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # pip install faiss-cpu or faiss-gpu
 # 현재 파이썬 스크립트 실행 위치 반환
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -27,7 +27,7 @@ docs = text_splitter.split_documents(documents)
 
 # 환경 변수에서 가져온 OpenAI API 키를 사용하여 OpenAIEmbeddings 클래스를 초기화합니다.
 # 이 클래스는 텍스트 청크를 임베딩(숫자 표현)으로 변환하는 데 사용됩니다.
-embeddings = OpenAIEmbeddings(api_key=os.getenv("OPENAI_API_KEY"))
+embeddings = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
 
 # 문서 청크 목록과 해당 임베딩을 사용하여 FAISS 인덱스를 생성합니다.
 # FAISS는 밀집 벡터의 효율적인 유사성 검색과 클러스터링을 위한 라이브러리입니다.
