@@ -3,6 +3,8 @@ from langchain.prompts import PromptTemplate
 # from langchain.llms import CTransformers
 # C Transformers는 Llama, GPT4All-J, MPT, Falcon과 같은 다양한 오픈 소스 모델을 지원합니다.
 from langchain_community.llms.ctransformers import CTransformers
+# ollama llama3.1model 연결하기
+from langchain_ollama.llms import OllamaLLM
 
 
 def getLLMResponse(form_input, email_sender, email_recipient):
@@ -29,10 +31,13 @@ def getLLMResponse(form_input, email_sender, email_recipient):
     # 이러한 파일 형식은 모델을 효율적으로 저장하고 불러올 수 있게 하여, 다양한 플랫폼과 환경에서 모델 추론을 원활하게 할 수 있게 합니다.
     # 따라서, GGUF 및 GGML 파일 형식은 GPT와 같은 언어 모델의 맥락에서 모델 추론을 위해 사용되는 중요한 파일 형식입니다
 
-    llm = CTransformers(model='./llama-2-7b-chat.ggmlv3.q8_0.bin',  # https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
-                        model_type='llama',
-                        config={'max_new_tokens': 512,
-                                'temperature': 0.01})
+    # llm = CTransformers(model='./llama-2-7b-chat.ggmlv3.q8_0.bin',  # https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
+    #                     model_type='llama',
+    #                     config={'max_new_tokens': 512,
+    #                             'temperature': 0.01})
+
+    # ollama llama3.1 부분 연결
+    llm = OllamaLLM(model="llama3.1:8b", temperature=0.7)
 
     template = """ 
     {email_topic} 주제를 포함한 이메일을 작성해 주세요.\n\n보낸 사람: {sender}\n받는 사람: {recipient} 전부 한국어로 번역해서 알려주세요.
