@@ -1,8 +1,7 @@
 import os
-from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
-
+from dotenv import load_dotenv
 # .env 파일에서 API 키 읽어오기
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")

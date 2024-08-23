@@ -1,19 +1,17 @@
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
+import asyncio
 import os
 from dotenv import load_dotenv
-import asyncio
 load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-# pip install faiss-cpu or faiss-gpu
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # main()이라는 비동기 함수를 정의합니다.
-
-
 async def main():
     # 환경 변수에서 가져온 OpenAI API 키를 사용하여 OpenAIEmbeddings 클래스를 초기화합니다.
-    embeddings = OpenAIEmbeddings(api_key=os.getenv("OPENAI_API_KEY"))
+    embeddings = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
 
     # 지정된 임베딩을 사용하여 로컬에 저장된 FAISS 인덱스를 로드합니다.
     # allow_dangerous_deserialization=True 옵션은 역직렬화를 허용합니다.

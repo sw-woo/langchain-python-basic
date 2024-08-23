@@ -1,16 +1,16 @@
-import os
-from dotenv import load_dotenv
 from langchain_text_splitters import CharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings, OpenAI
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import TextLoader
 from langchain_core.prompts import PromptTemplate
-
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
-
+import os
+from dotenv import load_dotenv
 
 load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 restaurants_text = os.path.join(current_dir, 'restaurants.txt')
@@ -29,7 +29,7 @@ def create_faiss_index():
     chunks = text_splitter.create_documents(documents)
 
     # OpenAI API를 사용하여 임베딩을 생성합니다.
-    embeddings = OpenAIEmbeddings(api_key=os.getenv("OPENAI_API_KEY"))
+    embeddings = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
 
     # Faiss 인덱스를 생성하고 저장합니다.
     db = FAISS.from_documents(chunks, embeddings)
@@ -38,7 +38,7 @@ def create_faiss_index():
 
 
 def load_faiss_index():
-    embeddings = OpenAIEmbeddings(api_key=os.getenv("OPENAI_API_KEY"))
+    embeddings = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
     load_db = FAISS.load_local(
         restaurant_faiss, embeddings, allow_dangerous_deserialization=True)
 
@@ -51,7 +51,7 @@ def format_docs(docs):
 
 def answer_question(db, query):
     # OpenAI 언어 모델 초기화
-    llm = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    llm = OpenAI(api_key=OPENAI_API_KEY)
 
     # 사용자 정의 프롬프트 템플릿 생성
     prompt_template = """
