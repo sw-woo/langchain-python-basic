@@ -93,8 +93,7 @@ def query_db(image_vdb, query, results=3):
 def translate(text, target_lang):
     translation_model = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.0)
     translation_prompt = ChatPromptTemplate.from_messages([
-        ("system", f"You are a translator. Translate the following text to{
-         target_lang}."),
+        ("system", f"You are a translator. Translate the following text to{target_lang}."),
         ("user", "{text}")
     ])
     translation_chain = translation_prompt | translation_model | StrOutputParser()
@@ -181,8 +180,7 @@ def main():
         for idx, uri in enumerate(results['uris'][0]):
             img_base64 = load_image_as_base64(uri)
             img_data_url = f"data:image/png;base64,{img_base64}"
-            st.image(img_data_url, caption=f"ID: {
-                     results['ids'][0][idx]}", width=300)
+            st.image(img_data_url, caption=f"ID: {results['ids'][0][idx]}", width=300)
 
         st.subheader("FashionRAG의 응답:")
         st.markdown(response_ko)
