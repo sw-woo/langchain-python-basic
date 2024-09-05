@@ -22,8 +22,6 @@ def getLLMResponse(form_input, email_sender, email_recipient, language):
 
     # Llama-2-7B-Chat용 래퍼: CPU에서 Llama 2 실행
 
-    # 퀀타이제이션은 모델의 정밀도를 16비트 부동소수점에서 8비트 정수로 변환하여 모델의 크기를 줄이고 성능을 유지하면서 자원이 제한된 장치에서도 효율적으로 사용할 수 있게 하는 기술입니다.
-
     # C Transformers is the Python library that provides bindings for transformer models implemented in C/C++ using the GGML library
     # 만약 컴퓨터 사양에 맞추어서 모델을 local 컴퓨터에 다운받고 model="다운받은 모델명"을 작성해서 진행하시면 됩니다. 용량이 작을수록 경량화 된 버전이여서 성능이 조금 떨어질 수 있습니다.
 
@@ -31,13 +29,13 @@ def getLLMResponse(form_input, email_sender, email_recipient, language):
     # 이러한 파일 형식은 모델을 효율적으로 저장하고 불러올 수 있게 하여, 다양한 플랫폼과 환경에서 모델 추론을 원활하게 할 수 있게 합니다.
     # 따라서, GGUF 및 GGML 파일 형식은 GPT와 같은 언어 모델의 맥락에서 모델 추론을 위해 사용되는 중요한 파일 형식입니다
 
-    llm = CTransformers(model='./llama-2-7b-chat.ggmlv3.q8_0.bin',  # https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
-                        model_type='llama',
-                        config={'max_new_tokens': 512,
-                                'temperature': 0.01})
+    # llm = CTransformers(model='./llama-2-7b-chat.ggmlv3.q8_0.bin',  # https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
+    #                     model_type='llama',
+    #                     config={'max_new_tokens': 512,
+    #                             'temperature': 0.01})
 
     # ollama llama3.1 부분 연결
-    # llm = OllamaLLM(model="llama3.1:8b", temperature=0.7)
+    llm = OllamaLLM(model="llama3.1:8b", temperature=0.7)
 
     if language == "한국어":
         template = """ 
@@ -56,7 +54,6 @@ def getLLMResponse(form_input, email_sender, email_recipient, language):
     )
 
     # LLM을 사용하여 응답 생성
-    # 지난 주에 langchain은 아래의 'invoke' 함수를 사용할 것을 권장했습니다 :)
     response = llm.invoke(prompt.format(email_topic=form_input, sender=email_sender, recipient=email_recipient, language=language))
     print(response)
 
