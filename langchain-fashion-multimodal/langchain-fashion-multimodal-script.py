@@ -11,13 +11,13 @@ from langchain_core.output_parsers import StrOutputParser
 from PIL import Image
 import io
 
-# Load environment variables from .env file
+# .env 파일에서 환경 변수 로드
 load_dotenv()
 
-# Get OpenAI API key from environment variable
+# 환경 변수에서 OpenAI API 키 가져오기
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-# Ensure the API key is set
+# API 키가 설정되지 않았을 경우 에러 설정
 if not OPENAI_API_KEY:
     raise ValueError("OPENAI_API_KEY is not set in the .env file")
 
@@ -27,50 +27,61 @@ os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 # 스크립트 파일의 디렉토리 경로를 가져옵니다.
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-
+# 데이터셋을 설정하는 함수
 def setup_dataset():
+    # 패션 관련 데이터셋 불러오기
     dataset = load_dataset("detection-datasets/fashionpedia")
+    # 데이터셋을 저장할 폴더 경로 설정
     dataset_folder = os.path.join(SCRIPT_DIR, 'fashion_dataset')
+    # 폴더가 없으면 생성
     os.makedirs(dataset_folder, exist_ok=True)
     return dataset, dataset_folder
 
 
+# 데이터셋에서 이미지를 저장하는 함수
 def save_images(dataset, dataset_folder, num_images=500):
+    # 주어진 수의 이미지를 저장
     for i in range(num_images):
         image = dataset['train'][i]['image']
         image.save(os.path.join(dataset_folder, f'image_{i+1}.png'))
     print(f"Saved {num_images} images to {dataset_folder}")
 
-
+# Chroma 데이터베이스를 설정하는 함수
 def setup_chroma_db():
+    # 벡터 데이터베이스 저장 경로 설정
     vdb_path = os.path.join(SCRIPT_DIR, 'img_vdb')
+    # Chroma 클라이언트 초기화
     chroma_client = chromadb.PersistentClient(path=vdb_path)
+    # 이미지 로더 및 OpenCLIP 임베딩 함수 설정
     image_loader = ImageLoader()
     CLIP = OpenCLIPEmbeddingFunction()
+    # 이미지 데이터베이스 생성 또는 가져오기
     image_vdb = chroma_client.get_or_create_collection(
         name="image", embedding_function=CLIP, data_loader=image_loader)
     return image_vdb
 
-
+# 이미지를 데이터베이스에 추가하는 함수
 def add_images_to_db(image_vdb, dataset_folder):
     ids = []
     uris = []
+    # 폴더에서 이미지를 읽어와서 데이터베이스에 추가
     for i, filename in enumerate(sorted(os.listdir(dataset_folder))):
         if filename.endswith('.png'):
             file_path = os.path.join(dataset_folder, filename)
             ids.append(str(i))
             uris.append(file_path)
     image_vdb.add(ids=ids, uris=uris)
-    print("Images added to the database.")
+    print("이미지가 데이터베이스에 추가되었습니다.")
 
-
+# 데이터베이스에서 쿼리를 실행하는 함수
 def query_db(image_vdb, query, results=3):
+    # 주어진 쿼리를 실행하고, 상위 결과 반환
     return image_vdb.query(
         query_texts=[query],
         n_results=results,
         include=['uris', 'distances'])
 
-
+# 결과를 출력하는 함수
 def print_results(results):
     for idx, uri in enumerate(results['uris'][0]):
         print(f"ID: {results['ids'][0][idx]}")
@@ -78,19 +89,23 @@ def print_results(results):
         print(f"Path: {uri}")
         print("\n")
 
-
+# 텍스트를 지정된 언어로 번역하는 함수
 def translate(text, target_lang):
+    # OpenAI의 ChatGPT 모델을 사용하여 번역
     translation_model = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.0)
+    # 번역에 사용할 프롬프트 생성
     translation_prompt = ChatPromptTemplate.from_messages([
-        ("system", f"You are a translator. Translate the following text to {
-         target_lang}."),
+        ("system", f"You are a translator. Translate the following text to {target_lang}."),
         ("user", "{text}")
     ])
+    # 번역 체인 설정
     translation_chain = translation_prompt | translation_model | StrOutputParser()
+    # 번역 결과 반환
     return translation_chain.invoke({"text": text})
 
-
+# 시각적 정보를 처리하는 체인을 설정하는 함수
 def setup_vision_chain():
+    # GPT-4 모델을 사용하여 시각적 정보를 처리
     gpt4 = ChatOpenAI(model="gpt-4o", temperature=0.0)
     parser = StrOutputParser()
     image_prompt = ChatPromptTemplate.from_messages([
@@ -101,6 +116,7 @@ def setup_vision_chain():
             {"type": "image_url", "image_url": "data:image/jpeg;base64,{image_data_2}"},
         ]),
     ])
+    # 프롬프트, 모델, 파서 체인을 반환
     return image_prompt | gpt4 | parser
 
 
@@ -126,26 +142,27 @@ def format_prompt_inputs(data, user_query):
 
     return inputs
 
-
+# 메인 함수
 def main():
-    # Check if the dataset folder and images exist
+    # 데이터셋 폴더 및 이미지가 있는지 확인
     dataset_folder = os.path.join(SCRIPT_DIR, 'fashion_dataset')
     if not os.path.exists(dataset_folder) or not any(fname.endswith('.png') for fname in os.listdir(dataset_folder)):
         dataset, dataset_folder = setup_dataset()
         save_images(dataset, dataset_folder)
     else:
-        print("Dataset folder and images already exist, skipping dataset setup.")
+        print("데이터셋 폴더와 이미지가 이미 존재합니다. 데이터셋 설정을 건너뜁니다.")
 
-    # Check if the vector database is already set up
+    # 벡터 데이터베이스가 설정되었는지 확인
     vdb_path = os.path.join(SCRIPT_DIR, 'img_vdb')
     if not os.path.exists(vdb_path) or not os.listdir(vdb_path):
         image_vdb = setup_chroma_db()
         add_images_to_db(image_vdb, dataset_folder)
     else:
-        print("Vector database already set up, skipping database setup.")
+        print("벡터 데이터베이스가 이미 설정되어 있습니다. 데이터베이스 설정을 건너뜁니다.")
         image_vdb = setup_chroma_db()
 
-    vision_chain = setup_vision_chain()
+    #시각적 정보를 처리하는 체인 설정
+    vision_chain = setup_vision_chain() 
 
     while True:
         print("\nFashionRAG가 여러분의 서비스를 위해 준비되었습니다!")
@@ -167,6 +184,6 @@ def main():
         print("\nFashionRAG의 응답:")
         print(response_ko)
 
-
+# 메인 함수 실행
 if __name__ == "__main__":
     main()
