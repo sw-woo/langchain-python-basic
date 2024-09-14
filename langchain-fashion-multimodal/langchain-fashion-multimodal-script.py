@@ -8,8 +8,6 @@ from datasets import load_dataset
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from PIL import Image
-import io
 
 # .env 파일에서 환경 변수 로드
 load_dotenv()
@@ -19,7 +17,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # API 키가 설정되지 않았을 경우 에러 설정
 if not OPENAI_API_KEY:
-    raise ValueError("OPENAI_API_KEY is not set in the .env file")
+    raise ValueError(".env 파일에 OPENAI_API_KEY가 설정되지 않았습니다.")
 
 # OpenAI API 키 설정 (환경 변수 사용 권장)
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
@@ -74,7 +72,7 @@ def add_images_to_db(image_vdb, dataset_folder):
     print("이미지가 데이터베이스에 추가되었습니다.")
 
 # 데이터베이스에서 쿼리를 실행하는 함수
-def query_db(image_vdb, query, results=3):
+def query_db(image_vdb, query, results=2):
     # 주어진 쿼리를 실행하고, 상위 결과 반환
     return image_vdb.query(
         query_texts=[query],
@@ -105,8 +103,8 @@ def translate(text, target_lang):
 
 # 시각적 정보를 처리하는 체인을 설정하는 함수
 def setup_vision_chain():
-    # GPT-4 모델을 사용하여 시각적 정보를 처리
-    gpt4 = ChatOpenAI(model="gpt-4o", temperature=0.0)
+    # GPT-4 모델을 사용하여 시각적 정보를 처리 gpt-4o or gpt-4o-mini 모델선택
+    gpt4 = ChatOpenAI(model="gpt-4o-mini", temperature=0.0)
     parser = StrOutputParser()
     image_prompt = ChatPromptTemplate.from_messages([
         ("system", "You are a helpful fashion and styling assistant. Answer the user's question using the given image context with direct references to parts of the images provided. Maintain a more conversational tone, don't make too many lists. Use markdown formatting for highlights, emphasis, and structure."),
@@ -119,23 +117,23 @@ def setup_vision_chain():
     # 프롬프트, 모델, 파서 체인을 반환
     return image_prompt | gpt4 | parser
 
-
+# 프롬프트 입력을 포맷하는 함수
 def format_prompt_inputs(data, user_query):
     inputs = {}
 
-    # Add user query to the dictionary
+    # 사용자 쿼리를 딕셔너리에 추가
     inputs['user_query'] = user_query
 
-    # Get the first two image paths from the 'uris' list
+    # 'uris' 리스트에서 첫 두 이미지 경로 가져오기
     image_path_1 = data['uris'][0][0]
     image_path_2 = data['uris'][0][1]
 
-    # Encode the first image
+     # 첫 번째 이미지 인코딩
     with open(image_path_1, 'rb') as image_file:
         image_data_1 = image_file.read()
     inputs['image_data_1'] = base64.b64encode(image_data_1).decode('utf-8')
 
-    # Encode the second image
+    # 두 번째 이미지 인코딩
     with open(image_path_2, 'rb') as image_file:
         image_data_2 = image_file.read()
     inputs['image_data_2'] = base64.b64encode(image_data_2).decode('utf-8')

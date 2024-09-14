@@ -9,7 +9,6 @@ from datasets import load_dataset
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from PIL import Image
 
 # Load environment variables from .env file
 load_dotenv()
