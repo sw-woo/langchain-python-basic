@@ -9,6 +9,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
+
 # .env 파일에서 환경 변수 로드
 load_dotenv()
 
