@@ -16,7 +16,7 @@ from langchain_core.output_parsers import StrOutputParser
 from streamlit_extras.buy_me_a_coffee import button
 from langchain.load import dumps, loads
 
-# 베포시 chroma db에서 sqlite3를 사용하는데 오류가 나서 추가하였다.
+# 베포시 chroma db에서 sqlite3를 사용하는데 오류가 나서 추가하였습니다.
 import sys
 __import__('pysqlite3')
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
@@ -129,8 +129,7 @@ if uploaded_file is not None:
         return reranked_results[:top_n]
 
     # RAG-Fusion 체인 설정
-    retrieval_chain_rag_fusion = generate_queries | ensemble_retriever.map(
-    ) | reciprocal_rank_fusion
+    retrieval_chain_rag_fusion = generate_queries | ensemble_retriever.map() | reciprocal_rank_fusion
 
     # 최종 RAG 체인 설정
     template = """다음 맥락을 바탕으로 질문에 답변하세요:
