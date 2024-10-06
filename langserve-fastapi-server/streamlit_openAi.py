@@ -1,9 +1,9 @@
-# 실행 명령어 streamlit run client2.py
+# 실행 명령어 streamlit run streamlit_openAI.py
 import streamlit as st
 import requests
 
 # Streamlit 애플리케이션의 제목과 설명을 설정합니다.
-st.title("Langchain API Client")
+st.title("Langchain API Client openAI")
 st.write("주제에 맞는 소설과 시를 작성해주는 API 클라이언트입니다.")
 
 # 사용자가 입력할 주제를 받는 입력 상자를 만듭니다.

@@ -1,6 +1,7 @@
 langchain
 langchain_openai
 langchain_core
+langchain_ollama 
 python-dotenv
 langserve
 fastapi

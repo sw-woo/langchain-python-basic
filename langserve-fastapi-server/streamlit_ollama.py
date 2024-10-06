@@ -1,4 +1,4 @@
-# 실행 명령어 streamlit run client2.py
+# 실행 명령어 streamlit run streamlit_ollama.py
 import streamlit as st
 import requests
 
@@ -13,6 +13,7 @@ topic = st.text_input("주제를 입력하세요:")
 option = st.radio("작성을 원하는 항목을 선택하세요:", ("소설", "시"))
 # 또는 selectbox를 사용하여 드롭다운 메뉴로 사용할 수 있습니다.
 # option = st.selectbox("작성을 원하는 항목을 선택하세요:", ("소설", "시"))
+
 # 버튼을 만들어 사용자가 클릭하면 API 요청을 보내도록 합니다.
 if st.button("작성 요청 보내기"):
     if option == "소설":
