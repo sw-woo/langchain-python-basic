@@ -11,9 +11,6 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # Temperature 설정
 openai = ChatOpenAI(model="gpt-3.5-turbo", api_key=OPENAI_API_KEY, temperature=0.7)
 
-# Temperature 설정
-# openai = ChatOpenAI(model="gpt-4o", api_key=os.getenv("OPENAI_API_KEY"), temperature=0.7)
-
 # 프롬프트 템플릿 설정
 prompt1 = PromptTemplate.from_template(
     "다음 식당 리뷰를 한 문장으로 요약하세요.\n\n{review}"
