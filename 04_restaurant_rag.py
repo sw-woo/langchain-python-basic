@@ -35,4 +35,4 @@ db = FAISS.from_documents(docs, embeddings)
 
 # 생성된 FAISS 인덱스를 나중에 사용할 수 있도록 "restaurant-faiss"라는 로컬 디렉토리에 저장합니다.
 db.save_local(restaurant_faiss)
-print("Restaurant embedding index saved to", restaurant_faiss)
+print("레스토랑 임베딩 저장 완료", restaurant_faiss)
