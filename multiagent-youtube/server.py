@@ -6,8 +6,13 @@ import asyncio
 import json
 import logging
 from crewai import Crew, Process
-from .agents import create_agents
-from .tasks import get_tasks
+# from .agents import create_agents
+from app.agents import create_agents
+from app.tasks import get_tasks
+# import sys
+# import os 
+# sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 
 # 로깅 설정
 logging.basicConfig(level=logging.INFO)

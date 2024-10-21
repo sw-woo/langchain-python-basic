@@ -48,11 +48,11 @@ const Button = styled.button`
 	}
 `;
 
-const InputGroup = ({ youtubeUrl, handleInputChange, fetchData, loading }) => {
+const InputGroup = ({ topic, handleInputChange, fetchData, loading }) => {
 	return (
 		<InputGroupWrapper>
-			<Input type="text" placeholder="YouTube URL을 입력하세요" value={youtubeUrl} onChange={handleInputChange} />
-			<Button onClick={fetchData} disabled={loading || !youtubeUrl}>
+			<Input type="text" placeholder="블로그 작성 주제를 입력해주세요." value={topic} onChange={handleInputChange} />
+			<Button onClick={fetchData} disabled={loading || !topic}>
 				{loading ? "처리 중..." : "콘텐츠 생성"}
 			</Button>
 		</InputGroupWrapper>

@@ -1,5 +1,5 @@
 from crewai import Agent
-from .tools import get_youtube_tool
+from app.tools import get_youtube_tool
 from langchain_openai import ChatOpenAI
 
 # gpt-4o-mini 모델 사용시 적용하는 방법 성능이 오픈소스 llama3.1:8b 모델 보다 좋습니다. 단점은 비용이 듭니다.

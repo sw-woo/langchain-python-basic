@@ -1,10 +1,10 @@
 from crewai import Task
-from tools2 import yt_tool
-from agents2 import blog_researcher, blog_writer, translate_writter
+from tools import yt_tool
+from agents import blog_researcher, blog_writer, translate_writter
 import os
 from crewai_tools import YoutubeVideoSearchTool
 
-youtube_url = "https://youtu.be/RtJcPfuj_Wg?si=SUFTm2yARj6KESsO"
+youtube_url = "https://www.youtube.com/watch?v=-KTb3zivHXk"
 
 # 연구 과제
 research_task = Task(

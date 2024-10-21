@@ -1,5 +1,5 @@
 from crewai import Task
-from .tools import get_youtube_tool
+from app.tools import get_youtube_tool
 
 
 def get_tasks(youtube_url, agents):

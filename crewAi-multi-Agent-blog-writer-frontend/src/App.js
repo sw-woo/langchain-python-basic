@@ -34,13 +34,13 @@ const Error = styled.div`
 `;
 
 function App() {
-	const [youtubeUrl, setYoutubeUrl] = useState("");
+	const [topic, setTopic] = useState("");
 	const [result, setResult] = useState(null);
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState("");
 
 	const handleInputChange = (event) => {
-		setYoutubeUrl(event.target.value);
+		setTopic(event.target.value);
 	};
 
 	const fetchData = async () => {
@@ -49,8 +49,8 @@ function App() {
 		setResult(null);
 
 		try {
-			const response = await axios.post("http://localhost:8100/crewai", {
-				youtube_url: youtubeUrl,
+			const response = await axios.post("http://localhost:8000/crewai", {
+				topic: topic,
 			});
 			setResult(response.data);
 		} catch (err) {
@@ -71,14 +71,14 @@ function App() {
 
 	return (
 		<AppContainer>
-			<Header>CrewAI 콘텐츠 생성기</Header>
-			<Description>YouTube 비디오에서 콘텐츠를 생성하기 위해 CrewAI의 강력한 백엔드를 사용하세요.</Description>
+			<Header>CrewAI 블로그 콘텐츠 생성기</Header>
+			<Description>주제에 맞는 블로그 콘텐츠를 생성하기 위해 CrewAI의 강력한 백엔드를 사용하세요.</Description>
 
 			{loading ? (
 				<LoadingSpinner />
 			) : (
 				<>
-					<InputGroup youtubeUrl={youtubeUrl} handleInputChange={handleInputChange} fetchData={fetchData} loading={loading} />
+					<InputGroup topic={topic} handleInputChange={handleInputChange} fetchData={fetchData} loading={loading} />
 
 					{error && <Error>{error}</Error>}
 

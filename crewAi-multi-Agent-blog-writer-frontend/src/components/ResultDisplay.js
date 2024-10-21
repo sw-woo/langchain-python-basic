@@ -44,7 +44,7 @@ const ResultDisplay = ({ result, handleDownload }) => {
 	return (
 		result && (
 			<ResultContainer>
-				<h2>제공한 유튜브 콘텐츠 요약</h2>
+				<h2>작성한 콘텐츠를 다운로드해 보세요!</h2>
 				<ResultText>{result.raw}</ResultText>
 				<DownloadButton onClick={handleDownload}>
 					<FaDownload style={{ marginRight: "8px" }} />

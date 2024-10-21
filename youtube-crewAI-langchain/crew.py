@@ -1,6 +1,6 @@
 from crewai import Crew, Process
-from agents2 import blog_researcher, blog_writer, translate_writter
-from tasks2 import research_task, write_task, translate_task
+from agents import blog_researcher, blog_writer, translate_writter
+from tasks import research_task, write_task, translate_task
 
 
 # Forming the tech-focused crew with some enhanced configurations

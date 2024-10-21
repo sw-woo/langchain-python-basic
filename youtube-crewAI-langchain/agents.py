@@ -1,6 +1,6 @@
 import os
 from crewai import Agent
-from tools2 import yt_tool
+from tools import yt_tool
 # from langchain_ollama.llms import OllamaLLM
 # from langchain.llms import Ollama
 
