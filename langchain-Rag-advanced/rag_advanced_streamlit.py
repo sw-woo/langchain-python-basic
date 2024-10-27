@@ -1,25 +1,21 @@
 import os
 import tempfile
-import sys
 import streamlit as st
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
-from langchain.prompts import ChatPromptTemplate, PromptTemplate
+from langchain.prompts import ChatPromptTemplate
 from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_chroma import Chroma
-# 베포시 chromadb 문제로 아래 api 사용
-# from langchain.vectorstores import Chroma
 from langchain.retrievers import BM25Retriever, EnsembleRetriever
 from langchain_core.output_parsers import StrOutputParser
 from streamlit_extras.buy_me_a_coffee import button
 from langchain.load import dumps, loads
+from langchain_community.vectorstores import FAISS
+import faiss
+from langchain_community.docstore.in_memory import InMemoryDocstore
 
-# 베포시 chroma db에서 sqlite3를 사용하는데 오류가 나서 추가하였습니다.
-import sys
-__import__('pysqlite3')
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 
 # 'Buy me a coffee' 버튼 초기화 username에 각자 username을 입력해주세요!
 button(username="swpheus14", floating=True, width=221)
@@ -66,26 +62,33 @@ if uploaded_file is not None:
         chunk_size=500,
         chunk_overlap=50
     )
-    # 베포시에는 chroma DB문제로 아래 split 사용
-    # Split
-    # text_splitter = RecursiveCharacterTextSplitter(
-    #     chunk_size=500,
-    #     chunk_overlap=20,
-    #     length_function=len,
-    #     is_separator_regex=False,
-    # )
+
     splits = text_splitter.split_documents(pages)
 
-    # 임베딩 및 Chroma 설정
+    # 임베딩 및 faiss 설정
     embeddings_model = OpenAIEmbeddings(openai_api_key=openai_key)
-    vectorstore = Chroma.from_documents(
-        documents=splits, embedding=embeddings_model)
-    chroma_retriever = vectorstore.as_retriever(search_type="mmr",  # MMR 알고리즘을 사용하여 검색
+
+    # 임베딩 벡터의 차원 계산 ex)1536 차원
+    embedding_dimension = len(OpenAIEmbeddings(openai_api_key=openai_key).embed_query("hello world"))
+
+    # FAISS 인덱스 생성
+    index = faiss.IndexFlatL2(len(OpenAIEmbeddings(openai_api_key=openai_key).embed_query("hello world")))
+
+    # 벡터 스토어 생성
+    vectorstore = FAISS(
+        embedding_function=embeddings_model,
+        index=index,
+        docstore=InMemoryDocstore(),
+        index_to_docstore_id={} 
+    )
+
+    # 문서 청크를 벡터 스토어에 추가
+    vectorstore.add_documents(documents=splits, ids=range(len(splits)))
+
+    #FAISS 리트리버 생성
+    faiss_retriever = vectorstore.as_retriever(search_type="mmr",  # MMR 알고리즘을 사용하여 검색
                                                 # 상위 1개의 문서를 반환하지만, 고려할 문서는 4개로 설정
                                                 search_kwargs={'k': 1, 'fetch_k': 4})
-
-    # 베포시 chroma DB문제로 아래 선언 사용
-    # chroma_retriever = vectorstore.as_retriever(search_kwargs={'k': 1})
 
     # BM25 리트리버 설정
     bm25_retriever = BM25Retriever.from_documents(splits)
@@ -93,7 +96,8 @@ if uploaded_file is not None:
 
     # 앙상블 리트리버 설정
     ensemble_retriever = EnsembleRetriever(
-        retrievers=[bm25_retriever, chroma_retriever], weights=[0.2, 0.8]
+        retrievers=[bm25_retriever, faiss_retriever], 
+        weights=[0.2, 0.8]
     )
 
     # RAG-Fusion을 위한 쿼리 생성
