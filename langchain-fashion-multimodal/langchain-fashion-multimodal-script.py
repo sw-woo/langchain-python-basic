@@ -70,7 +70,7 @@ def add_images_to_db(image_vdb, dataset_folder):
             ids.append(str(i))
             uris.append(file_path)
     image_vdb.add(ids=ids, uris=uris)
-    print("이미지가 데이터베이스에 추가되었습니다.")
+    print("이미지가 벡터 데이터베이스에 추가되었습니다.")
 
 # 데이터베이스에서 쿼리를 실행하는 함수
 def query_db(image_vdb, query, results=2):
@@ -107,6 +107,8 @@ def setup_vision_chain():
     # GPT-4 모델을 사용하여 시각적 정보를 처리 gpt-4o or gpt-4o-mini 모델선택
     gpt4 = ChatOpenAI(model="gpt-4o-mini", temperature=0.0)
     parser = StrOutputParser()
+
+    # 당신은 유용한 패션 및 스타일링 보조자입니다. 제공된 이미지 부분을 직접 참조하여 주어진 이미지 컨텍스트를 사용하여 사용자의 질문에 답합니다. 좀 더 대화적인 분위기를 유지하고 목록을 너무 많이 만들지 마십시오. 하이라이트, 강조, 구조를 위해 마크다운 형식을 사용하세요.
     image_prompt = ChatPromptTemplate.from_messages([
         ("system", "You are a helpful fashion and styling assistant. Answer the user's question using the given image context with direct references to parts of the images provided. Maintain a more conversational tone, don't make too many lists. Use markdown formatting for highlights, emphasis, and structure."),
         ("user", [
@@ -129,7 +131,7 @@ def format_prompt_inputs(data, user_query):
     image_path_1 = data['uris'][0][0]
     image_path_2 = data['uris'][0][1]
 
-     # 첫 번째 이미지 인코딩
+     # 첫 번째 이미지 인코딩: 이진 데이터를 텍스트로 변환 => 바이트 문자열을 일반 문자열로 변환
     with open(image_path_1, 'rb') as image_file:
         image_data_1 = image_file.read()
     inputs['image_data_1'] = base64.b64encode(image_data_1).decode('utf-8')

@@ -4,7 +4,7 @@ from langchain_openai import ChatOpenAI
 
 # Ollama 사용 시 적용하는 방법
 llm = ChatOpenAI(
-    model="llama3.2:1b",                 # 사용할 언어 모델 지정
+    model="ollama/llama3.2:1b",                 # 사용할 언어 모델 지정
     base_url="http://localhost:11434/v1",  # 언어 모델의 베이스 URL
     api_key="NA"                         # API 키 (필요 없는 경우 'NA'로 설정)
 )

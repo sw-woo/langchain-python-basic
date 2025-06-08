@@ -1,6 +1,5 @@
 import streamlit as st
 from langchain.prompts import PromptTemplate
-# from langchain.llms import CTransformers
 # C Transformers는 Llama, GPT4All-J, MPT, Falcon과 같은 다양한 오픈 소스 모델을 지원합니다.
 from langchain_community.llms.ctransformers import CTransformers
 # ollama llama3.1model 연결하기

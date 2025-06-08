@@ -2,6 +2,7 @@
 # pip install wikipedia # wikipedia API를 사용하기 위한 패키지
 # pip install arxiv # Arxiv 논문 검색을 위한 패키지
 # pip install yfinance # Yahoo Finance에서 주식 뉴스 및 데이터를 검색하기 위한 패키지
+# pip install langchainhub #langchainhub prompt 다운로드
 
 # Agents 생성을 위한 참조 Agent Executer
 from langchain.agents import AgentExecutor
@@ -101,8 +102,8 @@ agent = create_openai_tools_agent(llm=openai, tools=tools, prompt=prompt)
 # agent Execute 정의 부분 verbose=True로 설정하면 agent 실행과정을 출력합니다.
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 
-# agent_result = agent_executor.invoke({"input": "llm 관련 최신 논문을 알려줘"})
-agent_result = agent_executor.invoke({"input": "마이크로소프트 관련 오늘자 주가를 알려줘"})
+agent_result = agent_executor.invoke({"input": "llm 관련 최신 논문을 알려줘"})
+# agent_result = agent_executor.invoke({"input": "테슬라 최근 주가 변동세랑 주요 소식을 알려줘"})
 
 #결과 출력
 print(agent_result)
